@@ -1,0 +1,4 @@
+tc qdisc add dev eth2 handle 1: root tbf rate 100Mbit burst 10k latency 50ms
+tc qdisc add dev eth2 parent 1:0 handle 10:0 prio
+tc f a dev eth2 parent 10:0 prio 1 protocol ip u32 match ip src 10.0.0.2 flowid 10:1
+tc f a dev eth2 parent 10:0 prio 1 protocol ip u32 match ip src 10.0.0.6 flowid 10:2

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vnx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="/usr/share/xml/vnx/vnx-2.00.xsd">
+	<global>
+    <version>2.0</version>
+    <scenario_name>PEs_scenario</scenario_name>
+    <vm_defaults>
+        <console id="0" display="no"/>
+        <console id="1" display="yes"/>
+    </vm_defaults>
+    <vm_mgmt type="none">
+    </vm_mgmt>
+  </global>
+    <vm name="PE1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/PE1_conf.sh</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/Prueba2</filetree>
+    <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf_test4.sh</filetree>
+    <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf2_test4.sh</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/Prueba5</filetree>
+    <exec seq="on_boot" type="verbatim">
+	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+            echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+    <exec seq="config_ifaces" type="verbatim">
+            ifconfig enp3s0 10.0.0.1/24
+            ifconfig enp3s0 up
+            ifconfig enp4s0 10.1.0.1/30
+            ifconfig enp4s0 up
+            ip route add 0.0.0.0/0 via 10.1.0.2
+    </exec>
+    <exec seq="config_PEs" type="verbatim">
+            ./root/PE1_conf.sh
+    </exec>
+    </vm>
+    <vm name="PE2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64_2</filesystem>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/PE2_conf.sh</filetree>
+    <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf2_test4.sh</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+            echo 1 > /proc/sys/net/ipv4/ip_forward   
+    </exec>
+    <exec seq="config_ifaces" type="verbatim">
+	    ifconfig enp5s0 10.1.0.66/30
+            ifconfig enp5s0 up
+            ifconfig enp6s0 10.2.0.1/24
+            ifconfig enp6s0 up
+            ip route add 0.0.0.0/0 via 10.1.0.65
+    </exec>
+    <exec seq="config_PEs" type="verbatim">
+            ./root/PE2_conf.sh
+    </exec>
+    </vm>
+  <host>
+    <exec seq="on_boot" type="verbatim">
+	ip link set enp3s0 netns PE1
+        ip link set enp4s0 netns PE1
+        ip link set enp5s0 netns PE2
+        ip link set enp6s0 netns PE2
+    </exec>
+  </host>
+
+</vnx>
