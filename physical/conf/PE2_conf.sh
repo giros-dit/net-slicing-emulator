@@ -8,9 +8,17 @@ tc qdisc add dev enp6s0 root handle 1: prio #Creates automatically classes 1:1, 
 
 echo "Installing filters"
 tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.2 classid 1:2
+tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.7 classid 1:2
+tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.8 classid 1:2
 tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.6 classid 1:1
+tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.9 classid 1:1
+tc filter add dev enp6s0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.10 classid 1:1
 tc filter add dev enp6s0 protocol ip parent 1:0 prio 5 u32 match ip src 10.0.0.0/24 classid 1:3
 
 tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.2 classid 1:2
+tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.7 classid 1:2
+tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.8 classid 1:2
 tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.6 classid 1:1
+tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.9 classid 1:1
+tc filter add dev enp5s0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.0.10 classid 1:1
 tc filter add dev enp5s0 protocol ip parent 1:0 prio 5 u32 match ip dst 10.0.0.0/24 classid 1:3
