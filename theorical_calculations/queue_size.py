@@ -124,3 +124,19 @@ ax3.grid(True)
 ax3.legend()
 
 plt.show()
+
+
+
+##### Valores por defecto:
+q_defaults = []
+suma_q_s = sum(q_s[2])
+b_TNA = 30272
+q_defaults.append(np.floor(Gamma_TNA * 1538 / R_min + b_TNA))
+q_defaults.append(queue_size_max(1538, b_TNA, R_min, 106096, 15380, suma_q_s, Gamma_TNA, 32000000))
+q_defaults.append(queue_size_max(1088, b_TNA, R_min, 69210, 4614, suma_q_s, Gamma_TNA, 56800000))
+q_defaults.append(queue_size_max(130, b_TNA, R_min, 129191, 1538, suma_q_s, Gamma_TNA, 5000000))
+
+
+# Mostramos la tabla
+print(q_defaults)
+

@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from scipy.optimize import fsolve
 import matplotlib.pyplot as plt
 
@@ -34,6 +35,8 @@ urllc_results.append(b_URLLC/1000)
 urllc_results.append(np.floor(b_URLLC_4ms)/1000)
 urllc_results.append(np.floor(b_URLLC_5ms)/1000)
 
+print(b_URLLC/1000)
+
 ######################################################################################## TN CLASS B
 q_TNtheta = [1538, 6152, 15380, 15380, 30760, 61520]
 q_s = np.array([
@@ -55,6 +58,14 @@ for i in range(len(q_TNtheta)):
         b_TNtheta_initial_guess = 1
         solution = fsolve(burst_max, b_TNtheta_initial_guess, args=(D_theta_max[j], t_proc, T_theta, R_max, b_URLLC, R_min, q_TNtheta[i], suma_q_s, Gamma_URLLC), maxfev=500000)
         video_results[i][j] = np.floor(solution[0])/1000
+
+columns = [f"D_theta_max_{D}" for D in D_theta_max]
+index = [f"q_TNtheta_{i}" for i in q_TNtheta]
+
+df = pd.DataFrame(video_results, index=index, columns=columns)
+
+# Mostramos la tabla
+print(df)
 
 ######################################################################################## TN CLASS C
 q_TNtheta = [1538, 3076, 4614, 7690, 7690, 7690]
@@ -80,11 +91,28 @@ for i in range(len(q_TNtheta)):
         solution = fsolve(burst_max, b_TNtheta_initial_guess, args=(D_theta_max_tnc[j], t_proc, T_theta, R_max, b_URLLC, R_min, q_TNtheta[i], suma_q_s, Gamma_URLLC), maxfev=500000)
         embb_results[i][j] = np.floor(solution[0])/1000
 
+columns = [f"D_theta_max{D}" for D in D_theta_max_tnc]
+index = [f"q_TNtheta_{i}" for i in q_TNtheta]
+
+df = pd.DataFrame(telemetry_results, index=index, columns=columns)
+
+# Mostramos la tabla
+print(df)
+
+columns = [f"D_theta_max{D}" for D in D_theta_max_tnc]
+index = [f"q_TNtheta_{i}" for i in q_TNtheta]
+
+df = pd.DataFrame(embb_results, index=index, columns=columns)
+
+# Mostramos la tabla
+print(df)
+
+
 ######################################################################################## TN CLASS D
 q_TNtheta = [1538, 1538, 1538, 1538, 3076, 3076]
 T_theta = 1088
 T_theta_min = 130
-D_theta_max_tnd = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
+D_theta_max_tnd = [0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5]
 be_results = np.zeros((len(q_TNtheta), len(D_theta_max_tnd)))
 
 for i in range(len(q_TNtheta)):
@@ -93,6 +121,15 @@ for i in range(len(q_TNtheta)):
         b_TNtheta_initial_guess = 1
         solution = fsolve(burst_max, b_TNtheta_initial_guess, args=(D_theta_max_tnd[j], t_proc, T_theta, R_max, b_URLLC, R_min, q_TNtheta[i], suma_q_s, Gamma_URLLC), maxfev=500000)
         be_results[i][j] = np.floor(solution[0])/1000
+
+columns = [f"D_theta_max{D}" for D in D_theta_max_tnd]
+index = [f"q_TNtheta_{i}" for i in q_TNtheta]
+
+df = pd.DataFrame(be_results, index=index, columns=columns)
+
+# Mostramos la tabla
+print(df)
+
 
 # Plots
 fig1, ax1 = plt.subplots()
