@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="/usr/share/xml/vnx/vnx-2.00.xsd">
   <global>
     <version>2.0</version>
-    <scenario_name>p1_escenario</scenario_name>
+    <scenario_name>scenario_PC1</scenario_name>
     <vm_mgmt type="private" network="10.250.0.0" mask="24" offset="0">
        <host_mapping />
     </vm_mgmt>
@@ -16,8 +16,9 @@
   <net name="Net0" mode="virtual_bridge"/>
   <net name="Net1" mode="virtual_bridge"/> 
 
-  <vm name="h1" type="lxc" arch="x86_64">
+  <vm name="h1" type="lxc" arch="x86_64" vcpu="4">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>2G</mem>
     <if id="1" net="Net0">
       <ipv4>10.0.0.2/24</ipv4>
     </if>
@@ -28,8 +29,9 @@
     </exec>
   </vm>
 
-  <vm name="h2" type="lxc" arch="x86_64">
+  <vm name="h2" type="lxc" arch="x86_64" vcpu="4">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>2G</mem>
     <if id="1" net="Net0">
       <ipv4>10.0.0.3/24</ipv4>
     </if>
@@ -40,8 +42,9 @@
     </exec>
   </vm>
 
-  <vm name="h3" type="lxc" arch="x86_64">
+  <vm name="h3" type="lxc" arch="x86_64" vcpu="4">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>2G</mem>
     <if id="1" net="Net0">
       <ipv4>10.0.0.4/24</ipv4>
     </if>
@@ -52,8 +55,9 @@
     </exec>
   </vm>
 
-  <vm name="h4" type="lxc" arch="x86_64">
+  <vm name="h4" type="lxc" arch="x86_64" vcpu="4">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>2G</mem>
     <if id="1" net="Net0">
       <ipv4>10.0.0.5/24</ipv4>
     </if>
@@ -64,8 +68,9 @@
     </exec>
   </vm>
 
-  <vm name="h5" type="lxc" arch="x86_64">
+  <vm name="h5" type="lxc" arch="x86_64" vcpu="4">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>2G</mem>
     <if id="1" net="Net0">
       <ipv4>10.0.0.6/24</ipv4>
     </if>
@@ -136,9 +141,9 @@
     </exec>
   </vm>
 
-
-  <vm name="server1" type="lxc" arch="x86_64">
+  <vm name="server1" type="lxc" arch="x86_64" vcpu="2">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>512M</mem>
     <if id="1" net="Net1">
       <ipv4>10.2.0.2/24</ipv4>
     </if>
@@ -150,8 +155,9 @@
     </exec>
   </vm>
 
-  <vm name="server2" type="lxc" arch="x86_64">
+  <vm name="server2" type="lxc" arch="x86_64" vcpu="2">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>512M</mem>
     <if id="1" net="Net1">
       <ipv4>10.2.0.3/24</ipv4>
     </if>
@@ -163,8 +169,9 @@
     </exec>
   </vm>
 
-  <vm name="server3" type="lxc" arch="x86_64">
+  <vm name="server3" type="lxc" arch="x86_64" vcpu="2">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>512M</mem>
     <if id="1" net="Net1">
       <ipv4>10.2.0.4/24</ipv4>
     </if>
@@ -176,8 +183,9 @@
     </exec>
   </vm>
 
-  <vm name="server4" type="lxc" arch="x86_64">
+  <vm name="server4" type="lxc" arch="x86_64" vcpu="2">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>512M</mem>
     <if id="1" net="Net1">
       <ipv4>10.2.0.5/24</ipv4>
     </if>
@@ -189,8 +197,9 @@
     </exec>
   </vm>
 
-  <vm name="server5" type="lxc" arch="x86_64">
+  <vm name="server5" type="lxc" arch="x86_64" vcpu="2">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <mem>512M</mem>
     <if id="1" net="Net1">
       <ipv4>10.2.0.6/24</ipv4>
     </if>
@@ -267,7 +276,6 @@
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
     <filetree seq="on_boot" root="/root/" perms="755">conf/P_conf.sh</filetree>
-    <filetree seq="on_boot" root="/root/Prueba4" perms="755">conf/Prueba4/P_conf_test4.sh</filetree>
     <exec seq="on_boot" type="verbatim">
             echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 	    echo 1 > /proc/sys/net/ipv4/ip_forward
@@ -275,10 +283,11 @@
     <exec seq="config_ifaces" type="verbatim">
             ifconfig enxd46e0e069255 10.1.0.65/30
             ifconfig enxd46e0e069255 up
-            ifconfig enxd46e0e08bca75 10.1.0.2/30
+            ifconfig enxd46e0e08bca7 10.1.0.2/30
             ifconfig enxd46e0e08bca7 up
             ip route add 0.0.0.0/0 via 10.1.0.66
 	    ip route add 10.0.0.0/24 via 10.1.0.1          
+            ethtool -s enxd46e0e08bca7 speed 100
     </exec>
     <exec seq="config_P" type="verbatim">
             ./root/P_conf.sh
@@ -289,7 +298,7 @@
     <exec seq="on_boot" type="verbatim">
             ip link set enxd46e0e069255 netns P
             ip link set enxd46e0e08bca7 netns P
-            brctl addif Net0 enx18d6c714f5ea
+            brctl addif Net0 enp1s0
             brctl addif Net1 enxd46e0e08b9e6
     </exec>
   </host>

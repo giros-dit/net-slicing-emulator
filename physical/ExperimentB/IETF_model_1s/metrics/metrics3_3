@@ -1,0 +1,90 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 5428
+Read buffer size: 1.44 KByte (Dist bin width= 183 Byte)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:05 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  1] 0.0000-1.0000 sec  3.55 MBytes  29.8 Mbits/sec   0.165 ms 3102/5634 (55%) 205.906/2.135/369.999/115.505 ms 2533 pps 18
+[  1] 1.0000-2.0000 sec  3.67 MBytes  30.8 Mbits/sec   0.120 ms 6285/8906 (71%) 369.502/368.815/370.156/0.222 ms 2621 pps 10
+[  1] 2.0000-3.0000 sec  3.67 MBytes  30.8 Mbits/sec   0.127 ms 6281/8897 (71%) 369.531/368.851/370.229/0.244 ms 2617 pps 10
+[  1] 3.0000-4.0000 sec  3.66 MBytes  30.7 Mbits/sec   0.152 ms 6301/8909 (71%) 369.676/368.992/370.339/0.227 ms 2607 pps 10
+[  1] 4.0000-5.0000 sec  3.64 MBytes  30.6 Mbits/sec   0.141 ms 6303/8903 (71%) 369.532/368.850/370.135/0.200 ms 2600 pps 10
+[  1] 5.0000-6.0000 sec  3.68 MBytes  30.9 Mbits/sec   0.153 ms 6280/8907 (71%) 369.544/368.827/370.271/0.188 ms 2627 pps 10
+[  1] 6.0000-7.0000 sec  3.70 MBytes  31.1 Mbits/sec   0.169 ms 6260/8902 (70%) 369.760/369.115/370.373/0.187 ms 2642 pps 11
+[  1] 7.0000-8.0000 sec  3.70 MBytes  31.0 Mbits/sec   0.103 ms 6262/8901 (70%) 369.663/369.108/370.186/0.165 ms 2640 pps 10
+[  1] 8.0000-9.0000 sec  3.67 MBytes  30.8 Mbits/sec   0.150 ms 6286/8906 (71%) 369.669/369.125/370.254/0.162 ms 2620 pps 10
+[  1] 9.0000-10.0000 sec  3.68 MBytes  30.9 Mbits/sec   0.164 ms 6278/8904 (71%) 369.676/369.076/370.247/0.160 ms 2626 pps 10
+[  1] 10.0000-11.0000 sec  3.68 MBytes  30.8 Mbits/sec   0.171 ms 6284/8906 (71%) 369.671/369.051/370.249/0.165 ms 2621 pps 10
+[  1] 11.0000-12.0000 sec  3.68 MBytes  30.8 Mbits/sec   0.141 ms 6284/8906 (71%) 369.674/369.135/370.218/0.161 ms 2623 pps 10
+[  1] 12.0000-13.0000 sec  3.69 MBytes  30.9 Mbits/sec   0.126 ms 6274/8903 (70%) 369.671/369.099/370.175/0.166 ms 2628 pps 10
+[  1] 13.0000-14.0000 sec  3.66 MBytes  30.7 Mbits/sec   0.151 ms 6290/8902 (71%) 369.676/369.169/370.283/0.163 ms 2613 pps 10
+[  1] 14.0000-15.0000 sec  3.68 MBytes  30.9 Mbits/sec   0.145 ms 6282/8907 (71%) 369.651/369.003/370.401/0.181 ms 2625 pps 10
+[  1] 15.0000-16.0000 sec  4.05 MBytes  34.0 Mbits/sec   0.198 ms 8551/11438 (75%) 296.790/5.895/370.361/116.196 ms 2887 pps 14
+[  1] 16.0000-17.0000 sec  3.56 MBytes  29.8 Mbits/sec   0.176 ms 3833/6369 (60%) 271.455/85.153/370.462/94.973 ms 2535 pps 14
+[  1] 17.0000-18.0000 sec  3.63 MBytes  30.4 Mbits/sec   0.138 ms 6319/8908 (71%) 369.679/369.066/370.404/0.229 ms 2589 pps 10
+[  1] 18.0000-19.0000 sec  3.61 MBytes  30.3 Mbits/sec   0.155 ms 6328/8903 (71%) 369.534/368.706/370.104/0.217 ms 2575 pps 10
+[  1] 19.0000-20.0000 sec  3.62 MBytes  30.3 Mbits/sec   0.181 ms 6343/8922 (71%) 369.392/367.653/369.939/0.252 ms 2579 pps 10
+[  1] 20.0000-21.0000 sec  5.43 MBytes  45.5 Mbits/sec   0.058 ms 6079/9950 (61%) 264.791/249.930/367.665/30.429 ms 3871 pps 21
+[  1] 21.0000-22.0000 sec  5.40 MBytes  45.3 Mbits/sec   0.063 ms 5050/8902 (57%) 250.426/249.864/251.207/0.171 ms 3852 pps 23
+[  1] 22.0000-23.0000 sec  5.38 MBytes  45.1 Mbits/sec   0.084 ms 5069/8905 (57%) 250.488/249.367/251.061/0.153 ms 3837 pps 23
+[  1] 23.0000-24.0000 sec  5.36 MBytes  45.0 Mbits/sec   0.067 ms 5077/8902 (57%) 250.458/249.885/251.200/0.139 ms 3825 pps 22
+[  1] 24.0000-25.0000 sec  5.37 MBytes  45.0 Mbits/sec   0.097 ms 5078/8906 (57%) 250.352/249.895/250.824/0.141 ms 3828 pps 22
+[  1] 25.0000-26.0000 sec  5.42 MBytes  45.4 Mbits/sec   0.060 ms 5041/8904 (57%) 250.423/250.033/251.044/0.123 ms 3862 pps 23
+[  1] 26.0000-27.0000 sec  5.43 MBytes  45.5 Mbits/sec   0.119 ms 5036/8906 (57%) 250.337/249.871/250.847/0.136 ms 3870 pps 23
+[  1] 27.0000-28.0000 sec  5.41 MBytes  45.4 Mbits/sec   0.064 ms 5039/8901 (57%) 250.518/250.026/251.155/0.139 ms 3863 pps 23
+[  1] 28.0000-29.0000 sec  5.42 MBytes  45.5 Mbits/sec   0.051 ms 5039/8908 (57%) 250.318/249.886/250.959/0.148 ms 3869 pps 23
+[  1] 29.0000-30.0000 sec  5.43 MBytes  45.5 Mbits/sec   0.111 ms 5029/8900 (57%) 250.397/249.249/250.998/0.180 ms 3871 pps 23
+[  1] 30.0000-30.2501 sec  1.37 MBytes  45.8 Mbits/sec   0.143 ms 1243/2217 (56%) 250.515/250.098/252.236/0.143 ms 3892 pps 23
+[  1] 0.0000-30.2501 sec   129 MBytes  35.7 Mbits/sec   0.143 ms 175206/267134 (66%) 309.472/2.135/370.462/67.862 ms 3039 pps 14
+[  2] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  2] 0.0000-0.0010 sec  2.87 KBytes  24.1 Mbits/sec   0.061 ms 267143/267145 (1e+02%) 263.318/262.831/263.805/262.832 ms 2053 pps 11
+[  3] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  3] 0.0000-0.0101 sec  2.87 KBytes  2.34 Mbits/sec   0.629 ms 267159/267161 (1e+02%) 284.710/279.679/289.742/279.770 ms 199 pps 1
+[  4] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  4] 0.0000-0.0100 sec  2.87 KBytes  2.34 Mbits/sec   0.628 ms 267170/267172 (1e+02%) 395.308/390.286/400.331/390.351 ms 199 pps 1
+[  5] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  5] 0.0000-0.0100 sec  2.87 KBytes  2.34 Mbits/sec   0.627 ms 267181/267183 (1e+02%) 505.811/500.796/510.826/500.846 ms 199 pps 1
+[  6] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  6] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.630 ms 267192/267194 (1e+02%) 616.383/611.346/621.420/611.387 ms 199 pps 0
+[  7] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:35 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  7] 0.0000-0.0102 sec  2.87 KBytes  2.32 Mbits/sec   0.635 ms 267203/267205 (1e+02%) 727.199/722.122/732.277/722.158 ms 197 pps 0
+[  8] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  8] 0.0000-0.0100 sec  2.87 KBytes  2.34 Mbits/sec   0.628 ms 267214/267216 (1e+02%) 837.743/832.720/842.767/832.750 ms 199 pps 0
+[  9] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  9] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.630 ms 267225/267227 (1e+02%) 948.420/943.379/953.462/943.406 ms 198 pps 0
+[ 10] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 10] 0.0000-0.0098 sec  2.87 KBytes  2.41 Mbits/sec   0.611 ms 267236/267238 (1e+02%) 1059.050/1054.165/1063.934/1054.188 ms 205 pps 0
+[ 11] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 11] 0.0000-0.0097 sec  2.87 KBytes  2.42 Mbits/sec   0.607 ms 267247/267249 (1e+02%) 1169.780/1164.928/1174.633/1164.948 ms 206 pps 0
+[ 12] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 12] 0.0000-0.0098 sec  2.87 KBytes  2.40 Mbits/sec   0.613 ms 267258/267260 (1e+02%) 1280.246/1275.344/1285.149/1275.363 ms 204 pps 0
+[ 13] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 13] 0.0000-0.0101 sec  2.87 KBytes  2.34 Mbits/sec   0.628 ms 267269/267271 (1e+02%) 1390.589/1385.561/1395.616/1385.579 ms 199 pps 0
+[ 14] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 14] 0.0000-0.0100 sec  2.87 KBytes  2.36 Mbits/sec   0.623 ms 267280/267282 (1e+02%) 1501.104/1496.118/1506.090/1496.135 ms 201 pps 0
+[ 15] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 15] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.630 ms 267291/267293 (1e+02%) 1611.776/1606.739/1616.813/1606.755 ms 199 pps 0
+[ 16] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:36 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 16] 0.0000-0.0101 sec  2.87 KBytes  2.32 Mbits/sec   0.632 ms 267302/267304 (1e+02%) 1722.470/1717.412/1727.529/1717.427 ms 198 pps 0
+[ 17] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=3) (peer 2.1.5) on 2024-12-16 15:26:37 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 17] 0.0000-0.0101 sec  2.87 KBytes  2.34 Mbits/sec   0.629 ms 267313/267315 (1e+02%) 1833.219/1828.188/1838.251/1828.202 ms 199 pps 0
+[ 18] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 53595 (sock=4) (peer 2.1.5) on 2024-12-16 15:26:37 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 18] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.631 ms 267324/267326 (1e+02%) 1943.823/1938.773/1948.873/1938.786 ms 198 pps 0

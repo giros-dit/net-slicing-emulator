@@ -1,0 +1,152 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 5182
+Read buffer size: 1.44 KByte (Dist bin width= 183 Byte)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:21:51 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  1] 0.0000-1.0000 sec  6.30 MBytes  52.9 Mbits/sec   1.005 ms 4333/8830 (49%) 147.596/1.317/151.760/21.576 ms 4544 pps 45
+[  1] 0.0000-1.0000 sec  4401 datagrams received out-of-order
+[  1] 1.0000-2.0000 sec  6.86 MBytes  57.6 Mbits/sec   4.619 ms 4031/8927 (45%) 147.944/1.272/151.452/20.706 ms 4896 pps 49
+[  1] 1.0000-2.0000 sec  4800 datagrams received out-of-order
+[  1] 2.0000-3.0000 sec  7.75 MBytes  65.0 Mbits/sec   8.739 ms 3395/8923 (38%) 148.195/1.251/151.413/19.505 ms 5530 pps 55
+[  1] 2.0000-3.0000 sec  5432 datagrams received out-of-order
+[  1] 3.0000-4.0000 sec  5.76 MBytes  48.3 Mbits/sec   2.228 ms 4747/8853 (54%) 147.355/1.314/151.445/22.566 ms 4105 pps 41
+[  1] 3.0000-4.0000 sec  4010 datagrams received out-of-order
+[  1] 4.0000-5.0000 sec  5.90 MBytes  49.5 Mbits/sec   5.590 ms 4731/8940 (53%) 147.319/1.209/151.279/22.410 ms 4209 pps 42
+[  1] 4.0000-5.0000 sec  4112 datagrams received out-of-order
+[  1] 5.0000-6.0000 sec  6.65 MBytes  55.7 Mbits/sec   9.796 ms 4201/8941 (47%) 147.621/1.198/151.149/20.920 ms 4740 pps 47
+[  1] 5.0000-6.0000 sec  4645 datagrams received out-of-order
+[  1] 6.0000-7.0000 sec  5.79 MBytes  48.6 Mbits/sec   2.176 ms 4709/8841 (53%) 147.286/1.326/151.273/22.495 ms 4131 pps 41
+[  1] 6.0000-7.0000 sec  4036 datagrams received out-of-order
+[  1] 7.0000-8.0000 sec  7.21 MBytes  60.5 Mbits/sec   3.116 ms 3799/8941 (42%) 147.964/1.337/151.305/20.315 ms 5142 pps 51
+[  1] 7.0000-8.0000 sec  5045 datagrams received out-of-order
+[  1] 8.0000-9.0000 sec  6.83 MBytes  57.3 Mbits/sec  14.178 ms 4058/8930 (45%) 147.865/1.327/151.350/20.426 ms 4871 pps 48
+[  1] 8.0000-9.0000 sec  4779 datagrams received out-of-order
+[  1] 9.0000-10.0000 sec  5.47 MBytes  45.9 Mbits/sec   2.810 ms 4937/8836 (56%) 120.208/1.109/151.370/46.210 ms 3900 pps 48
+[  1] 9.0000-10.0000 sec  3818 datagrams received out-of-order
+[  1] 10.0000-11.0000 sec  6.14 MBytes  51.5 Mbits/sec   4.902 ms 4552/8930 (51%) 147.585/1.340/151.537/21.641 ms 4378 pps 44
+[  1] 10.0000-11.0000 sec  4284 datagrams received out-of-order
+[  1] 11.0000-12.0000 sec  6.33 MBytes  53.1 Mbits/sec  11.150 ms 4430/8947 (50%) 147.541/1.199/151.286/21.307 ms 4516 pps 45
+[  1] 11.0000-12.0000 sec  4423 datagrams received out-of-order
+[  1] 12.0000-13.0000 sec  7.08 MBytes  59.4 Mbits/sec   3.396 ms 3802/8854 (43%) 147.927/1.235/151.617/20.389 ms 5052 pps 50
+[  1] 12.0000-13.0000 sec  4956 datagrams received out-of-order
+[  1] 13.0000-14.0000 sec  6.73 MBytes  56.5 Mbits/sec  10.637 ms 4138/8942 (46%) 147.788/1.200/151.323/20.786 ms 4806 pps 48
+[  1] 13.0000-14.0000 sec  4709 datagrams received out-of-order
+[  1] 14.0000-15.0000 sec  7.01 MBytes  58.8 Mbits/sec  17.204 ms 3932/8930 (44%) 147.912/1.258/151.589/20.496 ms 4996 pps 50
+[  1] 14.0000-15.0000 sec  4902 datagrams received out-of-order
+[  1] 15.0000-16.0000 sec  6.89 MBytes  57.8 Mbits/sec   3.817 ms 3928/8840 (44%) 147.817/1.209/151.465/20.558 ms 4913 pps 49
+[  1] 15.0000-16.0000 sec  4817 datagrams received out-of-order
+[  1] 16.0000-17.0000 sec  6.85 MBytes  57.5 Mbits/sec  13.546 ms 4068/8956 (45%) 147.811/1.284/151.430/20.828 ms 4887 pps 49
+[  1] 16.0000-17.0000 sec  4791 datagrams received out-of-order
+[  1] 17.0000-18.0000 sec  7.37 MBytes  61.8 Mbits/sec   0.951 ms 3588/8846 (41%) 148.041/1.237/151.309/19.994 ms 5257 pps 52
+[  1] 17.0000-18.0000 sec  5162 datagrams received out-of-order
+[  1] 18.0000-19.0000 sec  7.21 MBytes  60.4 Mbits/sec   4.591 ms 3807/8947 (43%) 147.935/1.272/151.304/20.318 ms 5141 pps 51
+[  1] 18.0000-19.0000 sec  5043 datagrams received out-of-order
+[  1] 19.0000-20.0000 sec  6.34 MBytes  53.1 Mbits/sec   2.020 ms 4333/8852 (49%) 147.656/1.318/151.428/21.418 ms 4518 pps 45
+[  1] 19.0000-20.0000 sec  4424 datagrams received out-of-order
+[  1] 20.0000-21.0000 sec  6.59 MBytes  55.3 Mbits/sec   2.974 ms 4246/8949 (47%) 147.684/1.197/151.410/21.225 ms 4704 pps 47
+[  1] 20.0000-21.0000 sec  4606 datagrams received out-of-order
+[  1] 21.0000-22.0000 sec  7.85 MBytes  65.8 Mbits/sec  16.874 ms 3344/8943 (37%) 144.852/1.225/151.406/19.713 ms 5599 pps 57
+[  1] 21.0000-22.0000 sec  5502 datagrams received out-of-order
+[  1] 22.0000-23.0000 sec  7.79 MBytes  65.4 Mbits/sec   4.010 ms 3297/8856 (37%) 135.966/1.258/139.171/17.830 ms 5559 pps 60
+[  1] 22.0000-23.0000 sec  5463 datagrams received out-of-order
+[  1] 23.0000-24.0000 sec  7.67 MBytes  64.4 Mbits/sec  14.772 ms 3471/8945 (39%) 135.916/1.236/138.800/17.965 ms 5474 pps 59
+[  1] 23.0000-24.0000 sec  5378 datagrams received out-of-order
+[  1] 24.0000-25.0000 sec  7.24 MBytes  60.8 Mbits/sec   1.694 ms 3692/8859 (42%) 135.779/1.239/138.950/18.483 ms 5167 pps 56
+[  1] 24.0000-25.0000 sec  5071 datagrams received out-of-order
+[  1] 25.0000-26.0000 sec  7.59 MBytes  63.7 Mbits/sec   6.879 ms 3524/8939 (39%) 135.912/1.228/138.911/18.153 ms 5415 pps 59
+[  1] 25.0000-26.0000 sec  5318 datagrams received out-of-order
+[  1] 26.0000-27.0000 sec  7.23 MBytes  60.7 Mbits/sec   0.577 ms 3675/8833 (42%) 135.821/1.228/139.068/18.505 ms 5158 pps 56
+[  1] 26.0000-27.0000 sec  5062 datagrams received out-of-order
+[  1] 27.0000-28.0000 sec  7.04 MBytes  59.0 Mbits/sec   4.181 ms 3924/8945 (44%) 135.670/1.220/138.828/18.839 ms 5021 pps 54
+[  1] 27.0000-28.0000 sec  4924 datagrams received out-of-order
+[  1] 28.0000-29.0000 sec  7.98 MBytes  66.9 Mbits/sec   7.804 ms 3245/8936 (36%) 135.997/1.219/138.911/17.717 ms 5691 pps 62
+[  1] 28.0000-29.0000 sec  5594 datagrams received out-of-order
+[  1] 29.0000-30.0000 sec  8.28 MBytes  69.5 Mbits/sec   0.687 ms 2939/8847 (33%) 136.154/1.231/139.058/17.214 ms 5908 pps 64
+[  1] 29.0000-30.0000 sec  5813 datagrams received out-of-order
+[  1] 30.0000-31.0000 sec  6.23 MBytes  52.3 Mbits/sec  16.499 ms 4491/8938 (50%) 135.408/1.193/139.046/19.793 ms 4447 pps 48
+[  1] 30.0000-31.0000 sec  4352 datagrams received out-of-order
+[  1] 31.0000-32.0000 sec  4.17 MBytes  35.0 Mbits/sec  16.910 ms 5969/8943 (67%) 133.881/1.222/138.808/24.195 ms 2974 pps 33
+[  1] 31.0000-32.0000 sec  2878 datagrams received out-of-order
+[  1] 32.0000-33.0000 sec  5.68 MBytes  47.7 Mbits/sec   0.864 ms 4780/8833 (54%) 135.137/1.253/139.111/20.700 ms 4053 pps 44
+[  1] 32.0000-33.0000 sec  3958 datagrams received out-of-order
+[  1] 33.0000-34.0000 sec  7.81 MBytes  65.6 Mbits/sec   5.105 ms 3377/8951 (38%) 129.234/1.224/136.467/16.848 ms 5574 pps 63
+[  1] 33.0000-34.0000 sec  5479 datagrams received out-of-order
+[  1] 34.0000-35.0000 sec  6.56 MBytes  55.0 Mbits/sec   1.291 ms 4170/8848 (47%) 128.465/1.250/131.759/18.385 ms 4677 pps 54
+[  1] 34.0000-35.0000 sec  4582 datagrams received out-of-order
+[  1] 35.0000-36.0000 sec  6.12 MBytes  51.3 Mbits/sec   6.246 ms 4568/8933 (51%) 128.253/1.236/131.868/19.122 ms 4365 pps 50
+[  1] 35.0000-36.0000 sec  4268 datagrams received out-of-order
+[  1] 36.0000-37.0000 sec  6.46 MBytes  54.2 Mbits/sec   7.922 ms 4338/8945 (48%) 128.428/1.216/131.760/18.524 ms 4607 pps 53
+[  1] 36.0000-37.0000 sec  4511 datagrams received out-of-order
+[  1] 37.0000-38.0000 sec  6.93 MBytes  58.2 Mbits/sec   2.139 ms 3906/8852 (44%) 128.615/1.196/131.794/17.793 ms 4946 pps 57
+[  1] 37.0000-38.0000 sec  4851 datagrams received out-of-order
+[  1] 38.0000-39.0000 sec  6.35 MBytes  53.3 Mbits/sec   8.262 ms 4411/8940 (49%) 128.380/1.271/131.788/18.778 ms 4529 pps 52
+[  1] 38.0000-39.0000 sec  4432 datagrams received out-of-order
+[  1] 39.0000-40.0000 sec  6.41 MBytes  53.8 Mbits/sec   0.378 ms 4284/8856 (48%) 128.426/1.291/131.698/18.497 ms 4573 pps 52
+[  1] 39.0000-40.0000 sec  4477 datagrams received out-of-order
+[  1] 0.0000-40.0169 sec   271 MBytes  56.7 Mbits/sec   7.110 ms 163122/356178 (46%) 140.373/1.109/151.760/22.245 ms 4824 pps 51
+[  1] 0.0000-40.0169 sec  189236 datagrams received out-of-order
+[  2] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  2] 0.0000-0.0170 sec   185 KBytes  89.5 Mbits/sec   5.823 ms 356051/356180 (1e+02%) 129.241/38.491/130.532/14.052 ms 7607 pps 87
+[  3] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  3] 0.0000-0.0045 sec  51.7 KBytes  95.1 Mbits/sec   4.528 ms 356146/356182 (1e+02%) 127.016/58.779/129.347/24.797 ms 8084 pps 94
+[  4] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  4] 0.0000-0.0073 sec  79.0 KBytes  88.5 Mbits/sec   3.160 ms 356129/356184 (1e+02%) 127.420/79.010/128.648/18.727 ms 7528 pps 87
+[  5] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  5] 0.0000-0.0112 sec   121 KBytes  88.1 Mbits/sec   1.875 ms 356102/356186 (1e+02%) 127.310/99.457/127.938/14.373 ms 7494 pps 87
+[  6] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  6] 0.0000-0.0149 sec   149 KBytes  81.8 Mbits/sec   0.626 ms 356084/356188 (1e+02%) 126.966/119.640/127.605/12.597 ms 6958 pps 81
+[  7] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  7] 0.0000-0.0187 sec  48.8 KBytes  21.4 Mbits/sec   0.973 ms 356156/356190 (1e+02%) 127.067/126.385/140.154/22.219 ms 1816 pps 21
+[  8] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:31 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  8] 0.0000-0.0137 sec  2.87 KBytes  1.71 Mbits/sec   0.858 ms 356202/356204 (1e+02%) 288.956/282.093/295.818/282.260 ms 146 pps 1
+[  8] 0.0000-0.0137 sec  1 datagrams received out-of-order
+[  9] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  9] 0.0000-0.0140 sec  2.87 KBytes  1.68 Mbits/sec   0.877 ms 356214/356216 (1e+02%) 410.639/403.620/417.658/403.742 ms 142 pps 1
+[  9] 0.0000-0.0140 sec  1 datagrams received out-of-order
+[ 10] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 10] 0.0000-0.0204 sec  2.87 KBytes  1.15 Mbits/sec   1.273 ms 356228/356230 (1e+02%) 535.638/525.451/545.826/525.648 ms 98 pps 0
+[ 11] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 11] 0.0000-0.0135 sec  2.87 KBytes  1.75 Mbits/sec   0.842 ms 356242/356244 (1e+02%) 694.852/688.119/701.585/688.185 ms 149 pps 0
+[ 11] 0.0000-0.0135 sec  1 datagrams received out-of-order
+[ 12] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 12] 0.0000-0.0066 sec  2.87 KBytes  3.56 Mbits/sec   0.412 ms 356256/356258 (1e+02%) 826.591/823.292/829.891/823.305 ms 303 pps 1
+[ 13] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 13] 0.0000-0.0072 sec  2.87 KBytes  3.28 Mbits/sec   0.449 ms 356268/356270 (1e+02%) 948.525/944.936/952.114/944.950 ms 279 pps 0
+[ 14] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 14] 0.0000-0.0141 sec  2.87 KBytes  1.67 Mbits/sec   0.881 ms 356278/356280 (1e+02%) 1060.113/1053.064/1067.162/1053.111 ms 142 pps 0
+[ 14] 0.0000-0.0141 sec  1 datagrams received out-of-order
+[ 15] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:32 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 15] 0.0000-0.0134 sec  2.87 KBytes  1.76 Mbits/sec   0.836 ms 356298/356300 (1e+02%) 1262.889/1256.198/1269.580/1256.234 ms 149 pps 0
+[ 15] 0.0000-0.0134 sec  1 datagrams received out-of-order
+[ 16] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:33 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 16] 0.0000-0.0066 sec  2.87 KBytes  3.59 Mbits/sec   0.409 ms 356312/356314 (1e+02%) 1394.820/1391.544/1398.095/1391.552 ms 305 pps 0
+[ 17] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:33 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 17] 0.0000-0.0067 sec  2.87 KBytes  3.52 Mbits/sec   0.417 ms 356326/356328 (1e+02%) 1536.828/1533.490/1540.166/1533.497 ms 300 pps 0
+[ 18] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:33 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 18] 0.0000-0.0132 sec  2.87 KBytes  1.78 Mbits/sec   0.828 ms 356336/356338 (1e+02%) 1648.261/1641.636/1654.886/1641.663 ms 151 pps 0
+[ 18] 0.0000-0.0132 sec  1 datagrams received out-of-order
+[ 19] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=3) (peer 2.1.5) on 2024-12-16 15:22:33 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 19] 0.0000-0.0066 sec  2.87 KBytes  3.58 Mbits/sec   0.411 ms 356352/356354 (1e+02%) 1800.782/1797.492/1804.071/1797.498 ms 304 pps 0
+[ 20] local 10.2.0.6%eth1 port 5001 connected with 10.0.0.8 port 51377 (sock=4) (peer 2.1.5) on 2024-12-16 15:22:33 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 20] 0.0000-0.0201 sec  2.87 KBytes  1.17 Mbits/sec   1.255 ms 356372/356374 (1e+02%) 1996.799/1986.762/2006.835/1986.813 ms 100 pps 0

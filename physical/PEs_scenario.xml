@@ -4,13 +4,17 @@
 	<global>
     <version>2.0</version>
     <scenario_name>PEs_scenario</scenario_name>
+    <vm_mgmt type="private" network="10.250.0.0" mask="24" offset="0">
+       <host_mapping />
+    </vm_mgmt>
     <vm_defaults>
         <console id="0" display="no"/>
         <console id="1" display="yes"/>
     </vm_defaults>
-    <vm_mgmt type="none">
-    </vm_mgmt>
   </global>
+
+  <net name="Net0" mode="virtual_bridge"/>
+
     <vm name="PE1" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
@@ -19,6 +23,9 @@
     <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf_test4.sh</filetree>
     <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf2_test4.sh</filetree>
     <filetree seq="on_boot" root="/root/" perms="777">conf/Prueba5</filetree>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.2/24</ipv4>
+    </if>
     <exec seq="on_boot" type="verbatim">
 	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
             echo 1 > /proc/sys/net/ipv4/ip_forward
@@ -35,7 +42,7 @@
     </exec>
     </vm>
     <vm name="PE2" type="lxc" arch="x86_64">
-    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64_2</filesystem>
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
     <filetree seq="on_boot" root="/root/" perms="777">conf/PE2_conf.sh</filetree>
     <filetree seq="on_boot" root="/root/Prueba4" perms="777">conf/Prueba4/PE1_conf2_test4.sh</filetree>
