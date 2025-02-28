@@ -5,7 +5,7 @@
   xsi:noNamespaceSchemaLocation="/usr/share/xml/vnx/vnx-2.00.xsd">
 	<global>
     <version>2.0</version>
-    <scenario_name>slicing</scenario_name>
+    <scenario_name>slicing_vnx</scenario_name>
     <vm_mgmt type="private" network="10.250.0.0" mask="24" offset="0">
        <host_mapping />
     </vm_mgmt>
@@ -33,6 +33,9 @@
     <forwarding type="ip" />
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
     <filetree seq="on_boot" root="/root/" perms="777">conf/PE1_conf.sh</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentA</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentB</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentC</filetree>
     <exec seq="on_boot" type="verbatim">
 	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
  	    echo 1 > /proc/sys/net/ipv4/ip_forward
