@@ -39,8 +39,11 @@ cd test_results
 ./vectorization.sh files/bandwidth_metrics4_sender_burst 100 150
 ./vectorization.sh files/bandwidth_metrics5_sender_burst 100 0
 ./vectorization.sh files/bandwidth_metrics3_sender 0 150
+./vectorization.sh files/bandwidth_metrics6_sender 450 0
+
 
 mv files/bandwidth_metrics3_sender_with_zeros files/bandwidth_metrics3_sender
+mv files/bandwidth_metrics6_sender_with_zeros files/bandwidth_metrics6_sender
 
 ./aconditioning.sh files/bandwidth_metrics1_sender_burst_with_zeros
 ./aconditioning.sh files/bandwidth_metrics2_sender_burst_with_zeros

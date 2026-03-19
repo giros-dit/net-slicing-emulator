@@ -58,9 +58,15 @@ cd test_results
 
 ./vectorization.sh files/bandwidth_metrics3 0 150
 ./vectorization.sh files/latency_max_metrics3 0 150
+./vectorization.sh files/bandwidth_metrics6 450 0
+./vectorization.sh files/latency_max_metrics6 450 0
+
 
 mv files/bandwidth_metrics3_with_zeros files/bandwidth_metrics3
 mv files/latency_max_metrics3_with_zeros files/latency_max_metrics3
+mv files/bandwidth_metrics6_with_zeros files/bandwidth_metrics6
+mv files/latency_max_metrics6_with_zeros files/latency_max_metrics6
+
 
 #sudo rm -f bandwidth_metrics1_burst bandwidth_metrics2_burst bandwidth_metrics3_burst bandwidth_metrics4_burst bandwidth_metrics5_burst latency_max_metrics1_burst latency_max_metrics2_burst latency_max_metrics3_burst latency_max_metrics4_burst latency_max_metrics5_burst latency_metrics1_burst latency_metrics2_burst latency_metrics3_burst latency_metrics4_burst latency_metrics5_burst
 

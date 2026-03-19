@@ -44,30 +44,6 @@ backlog_tnd = []
    #         pktloss_tnd.append(float(line.strip()))
     #    except ValueError:
      #       pktloss_tnd.append(0)
-#with open('files/clase_1_backlog', 'r') as file:
- #   for line in file:
-  #      try:
-   #         backlog_tna.append(float(line.strip()))
-    #    except ValueError:
-     #       backlog_tna.append(0)
-#with open('files/clase_2_backlog', 'r') as file:
- #   for line in file:
-  #      try:
-   #         backlog_tnb.append(float(line.strip()))
-    #    except ValueError:
-     #       backlog_tnb.append(0)
-#with open('files/clase_3_backlog', 'r') as file:
- #   for line in file:
-  #      try:
-   #         backlog_tnc.append(float(line.strip()))
-    #    except ValueError:
-     #       backlog_tnc.append(0)
-#with open('files/clase_4_backlog', 'r') as file:
- #   for line in file:
-  #      try:
-   #         backlog_tnd.append(float(line.strip()))
-    #    except ValueError:
-     #       backlog_tnd.append(0)
 with open('files/lat_max_metrics1', 'r') as file:
     for line in file:
         try:
@@ -169,19 +145,20 @@ total_bw = s1c1 + s1c2 + s2c1 + s2c2 + s3c1 + s3c2
 
 vector1 = np.arange(0.1, 60.1, 0.1)
 size=2
+line_size = 2
 
 # Plot Customization
 # Figura 2: Maximum Latency Behaviour
-fig2, ax2 = plt.subplots(figsize=(10,6))
+fig2, ax2 = plt.subplots(figsize=(7,7))
 #fig2.suptitle('Maximum Latency Behaviour')
-ax2.plot(vector1, s1c1_data2, label='S1-C1', color='green', marker='*', linestyle='-.', markersize=size)
-ax2.plot(vector1, s3c2_data2, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size)
-ax2.plot(vector1, s3c1_data2, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size)
-ax2.plot(vector1, s1c2_data2, label='S1-C2', color='#BEF781', marker='^', linestyle='--', markersize=size, alpha=0.7)
-ax2.plot(vector1, s2c1_data2, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size)
-ax2.plot(vector1, s2c2_data2, label='S2-C2', color='cyan', marker='*', linestyle='-.', markersize=size)
-ax2.set_xlabel('t (s)')
-ax2.set_ylabel('Latency (ms)')
+ax2.plot(vector1, s1c1_data2, label='S1-C1', color='#006600', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax2.plot(vector1, s3c2_data2, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size, linewidth=line_size)
+ax2.plot(vector1, s3c1_data2, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size, linewidth=line_size)
+ax2.plot(vector1, s1c2_data2, label='S1-C2', color='#99FF99', marker='^', linestyle='--', markersize=size, linewidth=line_size)
+ax2.plot(vector1, s2c1_data2, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size, linewidth=line_size)
+ax2.plot(vector1, s2c2_data2, label='S2-C2', color='#DAE8FC', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax2.set_xlabel('t (s)', fontsize=14)
+ax2.set_ylabel('Latency (ms)', fontsize=14)
 ax2.set_xlim(0,60)
 ax2.set_ylim(0,30)
 ax2.grid(True)
@@ -189,22 +166,21 @@ ax2.grid(True)
 tikzplotlib.save("latency_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 # Figura 3: Bandwidth Behaviour
-fig3, ax3 = plt.subplots(figsize=(10,7))
+fig3, ax3 = plt.subplots(figsize=(7,7))
 #fig3.suptitle('Bandwidth Received')
-ax3.plot(vector1, s1c1_bw, label='S1-C1', color='green', marker='*', linestyle='-.', markersize=size)
-ax3.plot(vector1, s1c2_bw, label='S1-C2', color='#BEF781', marker='^', linestyle='--', markersize=size, alpha=0.7)
-ax3.plot(vector1, s3c1_bw, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size)
-ax3.plot(vector1, s3c2_bw, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size)
-ax3.plot(vector1, s2c1_bw, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size)
-ax3.plot(vector1, s2c2_bw, label='S2-C2', color='cyan', marker='*', linestyle='-.', markersize=size)
-ax3.plot(total_bw, label= 'Total', color='black', marker='x', linestyle='-', markersize=size)
-ax3.set_xlabel('t (s)')
-ax3.set_ylabel('BW (Mbps)')
+ax3.plot(vector1, s1c1_bw, label='S1-C1', color='#006600', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax3.plot(vector1, s2c1_bw, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size, linewidth=line_size)
+ax3.plot(vector1, s1c2_bw, label='S1-C2', color='#99FF99', marker='^', linestyle='--', markersize=size, alpha=0.7, linewidth=line_size)
+ax3.plot(vector1, s2c2_bw, label='S2-C2', color='#DAE8FC', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax3.plot(vector1, s3c1_bw, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size, linewidth=line_size)
+ax3.plot(vector1, s3c2_bw, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size, linewidth=line_size)
+ax3.set_xlabel('t (s)', fontsize=14)
+ax3.set_ylabel('BW (Mbps)', fontsize=14)
 ax3.set_xlim(0,60)
-ax3.set_ylim(top=105)
+ax3.set_ylim(top=35)
 ax3.grid(True)
 #ax3.legend()
-tikzplotlib.save("bw_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("bw_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 # Figura 4: Packet Loss in P
 #fig4, ax4 = plt.subplots()
@@ -231,26 +207,26 @@ tikzplotlib.save("bw_expa.tex", axis_width="\\textwidth", axis_height="0.7\\text
 #ax5.legend()
 
 # Figura 6: Bandwidth Sent Behaviour
-fig6, ax6 = plt.subplots(figsize=(10,7))
+fig6, ax6 = plt.subplots(figsize=(7,7))
 #fig6.suptitle('Bandwidth Sent')
-ax6.plot(vector1, s1c1, label='S1-C1', color='green', marker='*', linestyle='-.', markersize=size)
-ax6.plot(vector1, s3c2, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size)
-ax6.plot(vector1, s3c1, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size)
-ax6.plot(vector1, s1c2, label='S1-C2', color='#BEF781', marker='^', linestyle='--', markersize=size, alpha=0.7)
-ax6.plot(vector1, s2c1, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size)
-ax6.plot(vector1, s2c2, label='S2-C2', color='cyan', marker='*', linestyle='-.', markersize=size)
-ax6.set_xlabel('t (s)')
-ax6.set_ylabel('BW (Mbps)')
+ax6.plot(vector1, s1c1, label='S1-C1', color='#006600', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax6.plot(vector1, s3c2, label='S3-C2', color='#610B0B', marker='p', linestyle='--', markersize=size, linewidth=line_size)
+ax6.plot(vector1, s3c1, label='S3-C1', color='orange', marker='^', linestyle='--', markersize=size, linewidth=line_size)
+ax6.plot(vector1, s1c2, label='S1-C2', color='#99FF99', marker='^', linestyle='--', markersize=size, linewidth=line_size)
+ax6.plot(vector1, s2c1, label='S2-C1', color='#0040FF', marker='o', linestyle='-', markersize=size, linewidth=line_size, alpha= 0.6)
+ax6.plot(vector1, s2c2, label='S2-C2', color='#DAE8FC', marker='*', linestyle='-.', markersize=size, linewidth=line_size)
+ax6.set_xlabel('t (s)', fontsize=14)
+ax6.set_ylabel('BW (Mbps)', fontsize=14)
 ax6.set_xlim(0,60)
 ax6.grid(True)
 #ax6.legend()
-tikzplotlib.save("bw_gen_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("bw_gen_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
-fig_legend1 = plt.figure(figsize=(10, 1))
-handles, labels = ax3.get_legend_handles_labels()
-fig_legend1.legend(handles, labels, loc='center', ncol=7)
-plt.axis('off')
-tikzplotlib.save("legend_expA.tex")
+#fig_legend1 = plt.figure(figsize=(10, 1))
+#handles, labels = ax3.get_legend_handles_labels()
+#fig_legend1.legend(handles, labels, loc='center', ncol=6)
+#plt.axis('off')
+#tikzplotlib.save("legend_expA.tex")
 
 plt.show()
 
