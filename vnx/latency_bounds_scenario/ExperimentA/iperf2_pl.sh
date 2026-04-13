@@ -1,6 +1,11 @@
-/echo "Deleting previous data"
+echo "Deleting previous data"
 sudo -S rm -rf metrics/*
 sudo -S rm -rf test_results/files/*
+
+mkdir -p metrics
+mkdir -p test_results/files
+chmod 744 metrics
+chmod 744 test_results/files
 
 sleep 1
 

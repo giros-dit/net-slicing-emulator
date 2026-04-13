@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import numpy as np
 import tikzplotlib
-import subprocess
 import re
 import struct
 

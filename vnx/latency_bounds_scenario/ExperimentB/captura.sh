@@ -2,7 +2,10 @@
 
 echo "Abriendo capturas en Wireshark..."
 
+sudo rm -rf capturas
+
 mkdir -p capturas
+chmod 777 capturas
 
 wireshark -i PE1-e1 -k -f "udp && !icmp" -w capturas/PE1-e1.pcap &
 PID1=$!

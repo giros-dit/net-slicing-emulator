@@ -13,15 +13,15 @@ tc qdisc del dev eth2 root
 echo "Creating HTB"
 tc qdisc add dev ifb0 root handle 1: htb
 tc class add dev ifb0 parent 1: classid 1:1 htb rate 100mbit burst 1b
-tc class add dev ifb0 parent 1:1 classid 1:2 htb rate 40mbit ceil 100mbit burst 1b
+tc class add dev ifb0 parent 1:1 classid 1:2 htb rate 40mbit ceil 100mbit 
 tc class add dev ifb0 parent 1:2 classid 1:20 htb rate 30mbit ceil 100mbit burst 28521b cburst 28521b quantum 1500
 tc class add dev ifb0 parent 1:2 classid 1:21 htb rate 10mbit ceil 100mbit burst 26020b cburst 26020b quantum 1500
-tc class add dev ifb0 parent 1:1 classid 1:3 htb rate 30mbit ceil 100mbit burst 1b
+tc class add dev ifb0 parent 1:1 classid 1:3 htb rate 30mbit ceil 100mbit 
 tc class add dev ifb0 parent 1:3 classid 1:30 htb rate 10mbit ceil 10mbit burst 33617b cburst 33617b quantum 1500
 tc class add dev ifb0 parent 1:3 classid 1:31 htb rate 20mbit ceil 100mbit burst 17714b cburst 17714b quantum 1500
-tc class add dev ifb0 parent 1:1 classid 1:4 htb rate 30mbit ceil 100mbit burst 1b
+tc class add dev ifb0 parent 1:1 classid 1:4 htb rate 30mbit ceil 100mbit 
 tc class add dev ifb0 parent 1:4 classid 1:40 htb rate 30mbit ceil 100mbit burst 81060b cburst 81060b quantum 1500
-tc class add dev ifb0 parent 1:4 classid 1:41 htb rate 1kbit ceil 100000mbit burst 1b quantum 1500
+tc class add dev ifb0 parent 1:4 classid 1:41 htb rate 1kbit ceil 100000mbit quantum 1500
 
 tc qdisc add dev ifb0 parent 1:20 handle 20: pfifo limit 1
 tc qdisc add dev ifb0 parent 1:21 handle 21: pfifo limit 1
