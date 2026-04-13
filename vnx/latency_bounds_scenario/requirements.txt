@@ -1,0 +1,5 @@
+matplotlib==3.7.5
+numpy==1.26.4
+PyQt5==5.15.11
+scapy==2.6.1
+tikzplotlib==0.10.1
