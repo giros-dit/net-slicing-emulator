@@ -1,4 +1,5 @@
 from scapy.all import *
+import subprocess
 import time
 import struct
 from collections import defaultdict
@@ -27,7 +28,10 @@ host_macs = {
     "10.0.0.13": "00:00:00:00:01:0D",
 }
 
-dst_mac = "ee:e4:d4:bb:59:9f"
+dst_mac = subprocess.check_output(
+    ["sudo", "lxc-attach", "-n", "PE1", "--", "cat", "/sys/class/net/eth1/address"],
+    text=True
+).strip()
 
 # Tráfico en ráfagas (isochronous)
 bursts = [
