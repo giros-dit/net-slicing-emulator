@@ -1,0 +1,153 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 5842
+Read buffer size: 1.44 KByte (Dist bin width= 183 Byte)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:19 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  1] 0.0000-1.0000 sec  3.57 MBytes  29.9 Mbits/sec   0.214 ms 3083/5626 (55%) 206.768/1.655/370.630/115.655 ms 2544 pps 18
+[  1] 1.0000-2.0000 sec  3.69 MBytes  31.0 Mbits/sec   0.120 ms 6270/8905 (70%) 369.684/368.961/370.478/0.240 ms 2635 pps 10
+[  1] 2.0000-3.0000 sec  3.64 MBytes  30.6 Mbits/sec   0.166 ms 6311/8910 (71%) 369.598/368.567/370.343/0.285 ms 2600 pps 10
+[  1] 3.0000-4.0000 sec  3.68 MBytes  30.9 Mbits/sec   0.166 ms 6269/8895 (70%) 368.664/364.918/370.497/0.942 ms 2625 pps 10
+[  1] 4.0000-5.0000 sec  3.72 MBytes  31.2 Mbits/sec   0.224 ms 6258/8913 (70%) 369.603/365.648/375.841/1.405 ms 2655 pps 11
+[  1] 5.0000-6.0000 sec  3.71 MBytes  31.1 Mbits/sec   0.227 ms 6252/8898 (70%) 372.142/368.684/377.867/2.639 ms 2645 pps 10
+[  1] 6.0000-7.0000 sec  3.71 MBytes  31.1 Mbits/sec   0.220 ms 6259/8905 (70%) 369.902/368.800/372.077/0.410 ms 2647 pps 11
+[  1] 7.0000-8.0000 sec  3.61 MBytes  30.3 Mbits/sec   0.169 ms 6329/8907 (71%) 370.043/369.006/373.731/0.568 ms 2579 pps 10
+[  1] 8.0000-9.0000 sec  3.59 MBytes  30.1 Mbits/sec   0.184 ms 6339/8899 (71%) 370.061/368.858/371.459/0.488 ms 2560 pps 10
+[  1] 9.0000-10.0000 sec  3.65 MBytes  30.7 Mbits/sec   0.171 ms 6307/8914 (71%) 369.862/368.731/372.551/0.661 ms 2606 pps 10
+[  1] 10.0000-11.0000 sec  3.66 MBytes  30.7 Mbits/sec   0.216 ms 6289/8898 (71%) 369.845/368.606/372.439/0.656 ms 2610 pps 10
+[  1] 11.0000-12.0000 sec  3.62 MBytes  30.4 Mbits/sec   0.164 ms 6324/8905 (71%) 370.714/369.110/374.190/1.035 ms 2580 pps 10
+[  1] 12.0000-13.0000 sec  3.63 MBytes  30.4 Mbits/sec   0.168 ms 6319/8906 (71%) 369.826/368.927/372.601/0.505 ms 2588 pps 10
+[  1] 13.0000-14.0000 sec  3.97 MBytes  33.3 Mbits/sec   0.180 ms 7454/10288 (72%) 234.951/6.047/370.840/121.729 ms 2833 pps 18
+[  1] 14.0000-15.0000 sec  3.59 MBytes  30.1 Mbits/sec   0.173 ms 4961/7520 (66%) 340.750/214.384/370.530/46.457 ms 2559 pps 11
+[  1] 15.0000-16.0000 sec  3.61 MBytes  30.3 Mbits/sec   0.109 ms 6326/8903 (71%) 372.263/368.901/379.126/3.532 ms 2577 pps 10
+[  1] 16.0000-17.0000 sec  3.62 MBytes  30.4 Mbits/sec   0.171 ms 6313/8897 (71%) 369.219/368.223/370.248/0.355 ms 2585 pps 10
+[  1] 17.0000-18.0000 sec  3.63 MBytes  30.5 Mbits/sec   0.142 ms 6322/8912 (71%) 369.116/365.047/370.311/0.875 ms 2588 pps 10
+[  1] 18.0000-19.0000 sec  3.61 MBytes  30.3 Mbits/sec   0.140 ms 6329/8905 (71%) 369.672/368.830/370.351/0.221 ms 2576 pps 10
+[  1] 19.0000-20.0000 sec  3.70 MBytes  31.1 Mbits/sec   0.189 ms 6563/9204 (71%) 356.827/317.234/372.550/12.132 ms 2642 pps 11
+[  1] 20.0000-21.0000 sec  5.35 MBytes  44.9 Mbits/sec   0.063 ms 5845/9663 (60%) 265.797/249.546/347.180/29.690 ms 3818 pps 21
+[  1] 21.0000-22.0000 sec  5.40 MBytes  45.3 Mbits/sec   0.095 ms 5059/8908 (57%) 250.350/248.739/251.087/0.227 ms 3848 pps 23
+[  1] 22.0000-23.0000 sec  5.41 MBytes  45.4 Mbits/sec   0.091 ms 5046/8904 (57%) 250.473/249.532/251.090/0.154 ms 3859 pps 23
+[  1] 23.0000-24.0000 sec  5.41 MBytes  45.4 Mbits/sec   0.082 ms 5048/8906 (57%) 250.475/250.020/251.204/0.142 ms 3858 pps 23
+[  1] 24.0000-25.0000 sec  5.38 MBytes  45.1 Mbits/sec   0.057 ms 5067/8905 (57%) 250.375/249.475/251.030/0.155 ms 3838 pps 23
+[  1] 25.0000-26.0000 sec  5.38 MBytes  45.1 Mbits/sec   0.065 ms 5064/8903 (57%) 250.424/249.779/250.902/0.155 ms 3839 pps 23
+[  1] 26.0000-27.0000 sec  5.39 MBytes  45.2 Mbits/sec   0.071 ms 5059/8904 (57%) 250.497/249.596/251.073/0.149 ms 3845 pps 23
+[  1] 27.0000-28.0000 sec  5.40 MBytes  45.3 Mbits/sec   0.076 ms 5051/8902 (57%) 250.469/249.891/250.933/0.142 ms 3851 pps 23
+[  1] 28.0000-29.0000 sec  5.38 MBytes  45.2 Mbits/sec   0.041 ms 5065/8905 (57%) 250.361/249.455/250.988/0.162 ms 3840 pps 23
+[  1] 29.0000-30.0000 sec  5.38 MBytes  45.2 Mbits/sec   0.074 ms 5065/8906 (57%) 250.518/250.051/250.975/0.139 ms 3840 pps 23
+[  1] 30.0000-30.2504 sec  1.36 MBytes  45.7 Mbits/sec   0.153 ms 1247/2219 (56%) 250.478/250.071/251.903/0.154 ms 3882 pps 23
+[  1] 0.0000-30.2504 sec   128 MBytes  35.6 Mbits/sec   0.153 ms 175493/267135 (66%) 309.328/1.655/379.126/67.726 ms 3029 pps 14
+[  2] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  2] 0.0000-0.0009 sec  2.87 KBytes  26.3 Mbits/sec   0.056 ms 267144/267146 (1e+02%) 263.209/262.761/263.656/262.762 ms 2235 pps 12
+[  3] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  3] 0.0000-0.0105 sec  2.87 KBytes  2.25 Mbits/sec   0.654 ms 267160/267162 (1e+02%) 285.557/280.327/290.787/280.425 ms 191 pps 1
+[  4] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  4] 0.0000-0.0100 sec  2.87 KBytes  2.34 Mbits/sec   0.627 ms 267171/267173 (1e+02%) 395.935/390.916/400.955/390.980 ms 199 pps 1
+[  5] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  5] 0.0000-0.0100 sec  2.87 KBytes  2.35 Mbits/sec   0.626 ms 267182/267184 (1e+02%) 506.643/501.635/511.650/501.685 ms 200 pps 1
+[  6] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  6] 0.0000-0.0101 sec  2.87 KBytes  2.32 Mbits/sec   0.634 ms 267193/267195 (1e+02%) 617.434/612.359/622.509/612.401 ms 197 pps 0
+[  7] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  7] 0.0000-0.0099 sec  2.87 KBytes  2.37 Mbits/sec   0.621 ms 267204/267206 (1e+02%) 728.060/723.091/733.029/723.125 ms 201 pps 0
+[  8] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:49 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  8] 0.0000-0.0099 sec  2.87 KBytes  2.37 Mbits/sec   0.620 ms 267215/267217 (1e+02%) 838.782/833.819/843.744/833.849 ms 202 pps 0
+[  9] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  9] 0.0000-0.0126 sec  2.87 KBytes  1.87 Mbits/sec   0.784 ms 267226/267228 (1e+02%) 950.420/944.145/956.696/944.187 ms 159 pps 0
+[ 10] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 10] 0.0000-0.0090 sec  2.87 KBytes  2.61 Mbits/sec   0.563 ms 267237/267239 (1e+02%) 1062.171/1057.666/1066.675/1057.685 ms 222 pps 0
+[ 11] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 11] 0.0000-0.0099 sec  2.87 KBytes  2.37 Mbits/sec   0.621 ms 267248/267250 (1e+02%) 1172.440/1167.473/1177.408/1167.494 ms 201 pps 0
+[ 12] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 12] 0.0000-0.0134 sec  2.87 KBytes  1.75 Mbits/sec   0.838 ms 267259/267261 (1e+02%) 1284.740/1278.038/1291.441/1278.073 ms 149 pps 0
+[ 13] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 13] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.631 ms 267270/267272 (1e+02%) 1396.027/1390.980/1401.075/1390.998 ms 198 pps 0
+[ 14] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 14] 0.0000-0.0101 sec  2.87 KBytes  2.33 Mbits/sec   0.630 ms 267281/267283 (1e+02%) 1509.926/1504.886/1514.965/1504.903 ms 198 pps 0
+[ 15] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 15] 0.0000-0.0099 sec  2.87 KBytes  2.37 Mbits/sec   0.621 ms 267292/267294 (1e+02%) 1620.738/1615.769/1625.707/1615.784 ms 201 pps 0
+[ 16] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 16] 0.0000-0.0100 sec  2.87 KBytes  2.34 Mbits/sec   0.628 ms 267303/267305 (1e+02%) 1734.225/1729.200/1739.249/1729.215 ms 199 pps 0
+[ 17] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=3) (peer 2.1.5) on 2024-12-17 11:06:50 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 17] 0.0000-0.0098 sec  2.87 KBytes  2.41 Mbits/sec   0.609 ms 267314/267316 (1e+02%) 1844.849/1839.973/1849.725/1839.986 ms 205 pps 0
+[ 18] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.6 port 50236 (sock=4) (peer 2.1.5) on 2024-12-17 11:06:51 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 18] 0.0000-0.0101 sec  2.87 KBytes  2.34 Mbits/sec   0.629 ms 267325/267327 (1e+02%) 1955.399/1950.369/1960.428/1950.382 ms 199 pps 0
+[ 19] local 10.2.0.5%eth1 port 5001 connected with 10.0.0.8 port 33629 (sock=3) (peer 2.1.5) on 2024-12-18 11:51:56 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[ 19] 0.0000-1.0000 sec   416 KBytes  3.41 Mbits/sec   1.582 ms 6850/7140 (96%) 4.229/0.877/11.678/2.457 ms 289 pps 101
+[ 19] 1.0000-2.0000 sec   412 KBytes  3.38 Mbits/sec   1.983 ms 6823/7110 (96%) 4.134/0.968/8.284/1.593 ms 287 pps 102
+[ 19] 2.0000-3.0000 sec   406 KBytes  3.33 Mbits/sec   1.879 ms 6849/7132 (96%) 4.186/0.813/8.268/1.590 ms 283 pps 99
+[ 19] 3.0000-4.0000 sec   398 KBytes  3.26 Mbits/sec   2.022 ms 6834/7111 (96%) 4.257/0.893/8.233/1.690 ms 277 pps 96
+[ 19] 4.0000-5.0000 sec   405 KBytes  3.32 Mbits/sec   2.258 ms 6850/7132 (96%) 4.168/0.632/8.200/1.571 ms 282 pps 99
+[ 19] 5.0000-6.0000 sec   425 KBytes  3.48 Mbits/sec   2.253 ms 6860/7156 (96%) 4.016/0.577/11.722/1.928 ms 296 pps 108
+[ 19] 6.0000-7.0000 sec   405 KBytes  3.32 Mbits/sec   2.365 ms 6805/7087 (96%) 4.177/1.055/8.202/1.621 ms 283 pps 99
+[ 19] 7.0000-8.0000 sec   411 KBytes  3.36 Mbits/sec   2.855 ms 6866/7152 (96%) 4.166/0.762/7.917/1.748 ms 285 pps 101
+[ 19] 8.0000-9.0000 sec   403 KBytes  3.30 Mbits/sec   1.978 ms 6808/7089 (96%) 4.260/0.815/8.747/1.631 ms 281 pps 97
+[ 19] 9.0000-10.0000 sec   423 KBytes  3.47 Mbits/sec   2.116 ms 6863/7158 (96%) 4.033/0.509/11.785/1.788 ms 295 pps 108
+[ 19] 10.0000-11.0000 sec   406 KBytes  3.33 Mbits/sec   2.078 ms 6803/7086 (96%) 4.142/0.619/8.118/1.645 ms 283 pps 100
+[ 19] 11.0000-12.0000 sec   409 KBytes  3.35 Mbits/sec   2.583 ms 6871/7156 (96%) 4.196/1.060/8.251/1.640 ms 285 pps 100
+[ 19] 12.0000-13.0000 sec   399 KBytes  3.27 Mbits/sec   2.419 ms 6823/7101 (96%) 4.245/0.700/8.428/1.636 ms 278 pps 96
+[ 19] 13.0000-14.0000 sec   402 KBytes  3.29 Mbits/sec   2.297 ms 6854/7134 (96%) 4.260/1.003/8.365/1.689 ms 281 pps 97
+[ 19] 14.0000-15.0000 sec   411 KBytes  3.36 Mbits/sec   2.362 ms 6809/7095 (96%) 4.192/0.689/11.554/1.743 ms 286 pps 100
+[ 19] 15.0000-16.0000 sec   402 KBytes  3.29 Mbits/sec   2.181 ms 6877/7157 (96%) 4.208/0.798/7.193/1.525 ms 279 pps 98
+[ 19] 16.0000-17.0000 sec   398 KBytes  3.26 Mbits/sec   2.372 ms 6818/7095 (96%) 4.263/0.839/7.153/1.560 ms 277 pps 96
+[ 19] 17.0000-18.0000 sec   399 KBytes  3.27 Mbits/sec   2.185 ms 6870/7148 (96%) 4.248/1.003/6.737/1.484 ms 278 pps 96
+[ 19] 18.0000-19.0000 sec   402 KBytes  3.29 Mbits/sec   2.448 ms 6815/7095 (96%) 4.190/0.846/6.650/1.535 ms 280 pps 98
+[ 19] 19.0000-20.0000 sec   399 KBytes  3.27 Mbits/sec   2.685 ms 6869/7147 (96%) 4.236/0.930/10.101/1.699 ms 278 pps 96
+[ 19] 20.0000-21.0000 sec   399 KBytes  3.27 Mbits/sec   2.448 ms 6807/7085 (96%) 4.221/0.845/8.366/1.705 ms 279 pps 97
+[ 19] 21.0000-22.0000 sec   402 KBytes  3.29 Mbits/sec   2.381 ms 6879/7159 (96%) 4.143/0.672/7.316/1.669 ms 279 pps 99
+[ 19] 22.0000-23.0000 sec   403 KBytes  3.30 Mbits/sec   2.684 ms 6851/7132 (96%) 4.038/0.622/7.026/1.671 ms 281 pps 102
+[ 19] 23.0000-24.0000 sec   398 KBytes  3.26 Mbits/sec   2.218 ms 6832/7109 (96%) 4.093/0.979/7.906/1.621 ms 277 pps 99
+[ 19] 24.0000-25.0000 sec   403 KBytes  3.30 Mbits/sec   2.623 ms 6871/7152 (96%) 4.056/0.619/8.907/1.629 ms 281 pps 102
+[ 19] 25.0000-26.0000 sec   401 KBytes  3.28 Mbits/sec   2.616 ms 6813/7092 (96%) 4.073/0.906/8.026/1.542 ms 279 pps 101
+[ 19] 26.0000-27.0000 sec   439 KBytes  3.60 Mbits/sec   2.285 ms 6830/7136 (96%) 3.805/0.539/11.473/2.115 ms 306 pps 118
+[ 19] 27.0000-28.0000 sec   399 KBytes  3.27 Mbits/sec   2.477 ms 6829/7107 (96%) 4.137/0.835/6.694/1.660 ms 278 pps 99
+[ 19] 28.0000-29.0000 sec   408 KBytes  3.34 Mbits/sec   2.436 ms 6868/7152 (96%) 4.162/0.885/7.540/1.562 ms 284 pps 100
+[ 19] 29.0000-30.0000 sec   409 KBytes  3.35 Mbits/sec   2.282 ms 6804/7089 (96%) 4.098/0.831/11.026/1.683 ms 286 pps 102
+[ 19] 30.0000-31.0000 sec   405 KBytes  3.32 Mbits/sec   2.803 ms 6877/7159 (96%) 4.084/0.861/8.106/1.634 ms 281 pps 101
+[ 19] 31.0000-32.0000 sec   409 KBytes  3.35 Mbits/sec   2.398 ms 6800/7085 (96%) 4.064/0.936/7.448/1.595 ms 286 pps 103
+[ 19] 32.0000-33.0000 sec   409 KBytes  3.35 Mbits/sec   2.350 ms 6873/7158 (96%) 4.028/0.897/6.642/1.603 ms 284 pps 104
+[ 19] 33.0000-34.0000 sec   418 KBytes  3.42 Mbits/sec   2.523 ms 6794/7085 (96%) 3.929/0.512/11.689/1.849 ms 292 pps 109
+[ 19] 34.0000-35.0000 sec   405 KBytes  3.32 Mbits/sec   2.839 ms 6876/7158 (96%) 4.055/0.885/9.083/1.682 ms 282 pps 102
+[ 19] 35.0000-36.0000 sec   405 KBytes  3.32 Mbits/sec   1.831 ms 6832/7114 (96%) 4.078/0.628/6.806/1.597 ms 281 pps 102
+[ 19] 36.0000-37.0000 sec   421 KBytes  3.45 Mbits/sec   1.934 ms 6834/7127 (96%) 3.975/0.597/6.974/1.702 ms 293 pps 108
+[ 19] 37.0000-38.0000 sec   426 KBytes  3.49 Mbits/sec   1.939 ms 6821/7118 (96%) 3.885/0.515/11.832/1.957 ms 297 pps 112
+[ 19] 38.0000-39.0000 sec   401 KBytes  3.28 Mbits/sec   2.533 ms 6846/7125 (96%) 4.087/0.772/6.777/1.641 ms 279 pps 100
+[ 19] 39.0000-40.0000 sec   402 KBytes  3.29 Mbits/sec   2.492 ms 6858/7138 (96%) 4.183/0.736/9.048/1.630 ms 280 pps 98
+[ 19] 40.0000-41.0000 sec   403 KBytes  3.30 Mbits/sec   2.227 ms 6824/7105 (96%) 4.187/0.770/7.882/1.664 ms 281 pps 99
+[ 19] 41.0000-42.0000 sec   398 KBytes  3.26 Mbits/sec   2.139 ms 6873/7150 (96%) 4.220/0.891/7.163/1.613 ms 277 pps 96
+[ 19] 42.0000-43.0000 sec   398 KBytes  3.26 Mbits/sec   2.722 ms 6816/7093 (96%) 4.219/0.836/6.986/1.529 ms 277 pps 97
+[ 19] 43.0000-44.0000 sec   401 KBytes  3.28 Mbits/sec   2.108 ms 6879/7158 (96%) 4.194/1.014/7.018/1.554 ms 279 pps 98
+[ 19] 44.0000-45.0000 sec   406 KBytes  3.33 Mbits/sec   1.705 ms 6801/7084 (96%) 4.136/0.647/9.224/1.696 ms 284 pps 101
+[ 19] 45.0000-46.0000 sec   403 KBytes  3.30 Mbits/sec   2.399 ms 6861/7142 (96%) 4.178/0.954/7.178/1.563 ms 280 pps 99
+[ 19] 46.0000-47.0000 sec   403 KBytes  3.30 Mbits/sec   2.433 ms 6826/7107 (96%) 4.187/0.957/6.687/1.547 ms 281 pps 99
+[ 19] 47.0000-48.0000 sec   403 KBytes  3.30 Mbits/sec   1.926 ms 6855/7136 (96%) 4.177/0.915/8.383/1.524 ms 281 pps 99
+[ 19] 48.0000-49.0000 sec   403 KBytes  3.30 Mbits/sec   2.404 ms 6832/7113 (96%) 4.197/0.880/7.118/1.642 ms 281 pps 98
+[ 19] 49.0000-50.0000 sec   402 KBytes  3.29 Mbits/sec   2.529 ms 6866/7146 (96%) 4.193/0.886/7.117/1.614 ms 280 pps 98
+[ 19] 50.0000-51.0000 sec   405 KBytes  3.32 Mbits/sec   2.334 ms 6828/7110 (96%) 4.171/0.940/7.014/1.584 ms 282 pps 99
+[ 19] 51.0000-52.0000 sec   406 KBytes  3.33 Mbits/sec   2.072 ms 6849/7132 (96%) 4.166/0.861/7.207/1.512 ms 283 pps 100
+[ 19] 52.0000-53.0000 sec   403 KBytes  3.30 Mbits/sec   2.431 ms 6810/7091 (96%) 4.179/0.862/7.119/1.597 ms 282 pps 99
+[ 19] 53.0000-54.0000 sec   403 KBytes  3.30 Mbits/sec   2.115 ms 6859/7140 (96%) 4.183/0.934/7.045/1.508 ms 281 pps 99
+[ 19] 54.0000-55.0000 sec   403 KBytes  3.30 Mbits/sec   2.270 ms 6816/7097 (96%) 4.191/0.742/7.055/1.485 ms 281 pps 99
+[ 19] 55.0000-56.0000 sec   406 KBytes  3.33 Mbits/sec   2.148 ms 6875/7158 (96%) 4.166/0.847/7.002/1.496 ms 282 pps 100
+[ 19] 56.0000-57.0000 sec   402 KBytes  3.29 Mbits/sec   2.302 ms 6854/7134 (96%) 4.197/0.818/6.994/1.519 ms 280 pps 98
+[ 19] 57.0000-58.0000 sec   406 KBytes  3.33 Mbits/sec   2.359 ms 6826/7109 (96%) 4.176/0.955/9.117/1.551 ms 283 pps 100
+[ 19] 58.0000-59.0000 sec   411 KBytes  3.36 Mbits/sec   2.257 ms 6869/7155 (96%) 4.146/0.843/7.125/1.488 ms 286 pps 101
+[ 19] 59.0000-60.0000 sec   403 KBytes  3.30 Mbits/sec   2.482 ms 6807/7088 (96%) 4.201/0.766/8.433/1.660 ms 282 pps 98
+[ 19] 0.0000-60.0072 sec  23.8 MBytes  3.33 Mbits/sec   3.029 ms 410441/427413 (96%) 4.144/0.509/13.804/1.659 ms 283 pps 100

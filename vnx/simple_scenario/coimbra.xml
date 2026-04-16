@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<vnx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="/usr/share/xml/vnx/vnx-2.00.xsd">
+	<global>
+    <version>2.0</version>
+    <scenario_name>slicing_vnx</scenario_name>
+    <vm_mgmt type="private" network="10.250.0.0" mask="24" offset="0">
+       <host_mapping />
+    </vm_mgmt>
+    <vm_defaults>
+        <console id="0" display="no"/>
+        <console id="1" display="yes"/>
+    </vm_defaults>
+
+  </global>
+  <net name="Net0" mode="virtual_bridge"/>
+  <net name="Net1" mode="virtual_bridge"/>
+  <net name="Net2" mode="virtual_bridge"/>
+  <net name="Net3" mode="virtual_bridge"/>
+  <net name="ISL1" mode="virtual_bridge"/>
+  <net name="ISL4" mode="virtual_bridge"/>
+  <net name="ISL2" mode="virtual_bridge"/>
+  <net name="ISL3" mode="virtual_bridge"/>
+  <net name="virbr0" mode="virtual_bridge" managed="no"/>
+
+<vm name="PE1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.1/24</ipv4>
+    </if>
+    <if id="2" net="Net1">
+      <ipv4>10.1.0.1/30</ipv4>
+    </if>
+    <route type="ipv4" gw="10.1.0.2">default</route>
+    <forwarding type="ip" />
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf-coimbra/PE1_conf-coimbra.sh</filetree>
+
+    <filetree seq="send-file" root="/root/" perms="777">conf-coimbra/pktloss-policerPE1.py</filetree>
+<filetree seq="on_boot" root="/root/" perms="777">conf-coimbra/pktloss-policerPE1.py</filetree>
+    <exec seq="on_boot" type="verbatim">
+	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+ 	    echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+      <exec seq="config_routersA" type="verbatim">
+            ./root/PE1_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+            ./root/PE1_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+            ./root/PE1_conf-coimbra.sh
+    </exec>
+  </vm>
+  
+  <vm name="satGNB" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.1/24</ipv4>
+    </if>
+    <if id="2" net="ISL3">
+      <ipv4>20.1.0.1/30</ipv4>
+    </if>
+    <route type="ipv4" gw="20.1.0.2">default</route>
+    <forwarding type="ip" />
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <filetree seq="config_routersA" root="/root/" perms="777">conf-coimbra/satGNB_conf-coimbraA.sh</filetree>
+    <filetree seq="config_routersB" root="/root/" perms="777">conf-coimbra/satGNB_conf-coimbraB.sh</filetree>
+    <filetree seq="config_routersC" root="/root/" perms="777">conf-coimbra/satGNB_conf-coimbraC.sh</filetree>
+    <filetree seq="send-file" root="/root/" perms="777">conf-coimbra/pktloss-policerGNBC.py</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf-coimbra/pktloss-policerGNB.py</filetree>
+    <exec seq="on_boot" type="verbatim">
+	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+ 	    echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+    <exec seq="config_routersA" type="verbatim">
+	    sleep 1
+            ./root/satGNB_conf-coimbraA.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+	    sleep 1
+            ./root/satGNB_conf-coimbraB.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+	    sleep 1
+            ./root/satGNB_conf-coimbraC.sh
+    </exec>
+  </vm>
+
+
+   <vm name="satGS" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL2">
+      <ipv4>20.1.0.66/30</ipv4>
+    </if>
+    <if id="2" net="ISL1">
+      <ipv4>20.2.0.1/24</ipv4>
+    </if>
+    <if id="9" net="virbr0">
+      <ipv4>dhcp</ipv4>
+    </if>
+    <route type="ipv4" gw="192.168.122.1">default</route>
+    <filetree seq="config_routersA" root="/root/" perms="777">conf-coimbra/satGS_conf-coimbraA.sh</filetree>
+    <filetree seq="config_routersB" root="/root/" perms="777">conf-coimbra/satGS_conf-coimbraB.sh</filetree>
+    <filetree seq="config_routersC" root="/root/" perms="777">conf-coimbra/satGS_conf-coimbraC.sh</filetree>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <filetree seq="on_boot" root="/usr/bin/" perms="755">/usr/bin/vnx_config_nat</filetree>
+    <route type="ipv4" gw="20.1.0.65">10.0.0.0/24</route>
+    <forwarding type="ip" />
+    <exec seq="on_boot" type="verbatim">
+       echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+       echo 1 > /proc/sys/net/ipv4/ip_forward
+	    <!--sudo apt install iptables -y-->
+       sleep 1
+       /usr/bin/vnx_config_nat eth1 eth9
+    </exec>
+    <exec seq="config_routersA" type="verbatim">
+	    sleep 1
+            ./root/satGS_conf-coimbraA.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+	    sleep 1
+            ./root/satGS_conf-coimbraB.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+	    sleep 1
+            ./root/satGS_conf-coimbraC.sh
+    </exec>
+  </vm>
+
+  <vm name="PE2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net2">
+      <ipv4>10.1.0.66/30</ipv4>
+    </if>
+    <if id="2" net="Net3">
+      <ipv4>10.2.0.1/24</ipv4>
+    </if>
+    <if id="9" net="virbr0">
+      <ipv4>dhcp</ipv4>
+    </if>
+    <route type="ipv4" gw="192.168.122.1">default</route>
+    <filetree seq="on_boot" root="/root/" perms="777">conf-coimbra/PE2_conf-coimbra.sh</filetree>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <filetree seq="on_boot" root="/usr/bin/" perms="755">/usr/bin/vnx_config_nat</filetree>
+    <route type="ipv4" gw="10.1.0.65">10.0.0.0/24</route>
+    <forwarding type="ip" />
+    <exec seq="on_boot" type="verbatim">
+       echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+       echo 1 > /proc/sys/net/ipv4/ip_forward
+	    <!--sudo apt install iptables -y -->
+       sleep 1
+       /usr/bin/vnx_config_nat eth1 eth9
+    </exec>
+      <exec seq="config_routersA" type="verbatim">
+            ./root/PE2_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+            ./root/PE2_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+            ./root/PE2_conf-coimbra.sh
+    </exec>
+  </vm>
+
+   <vm name="satP" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL3">
+	<ipv4>20.1.0.2/30</ipv4>
+    </if>
+    <if id="2" net="ISL2">
+        <ipv4>20.1.0.65/30</ipv4>
+    </if>
+    <route type="ipv4" gw="20.1.0.66">default</route>
+    <route type="ipv4" gw="20.1.0.1">20.0.0.0/24</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <filetree seq="config_routersA" root="/root/" perms="777">conf-coimbra/satP_conf-coimbraA.sh</filetree>
+    <filetree seq="config_routersB" root="/root/" perms="777">conf-coimbra/satP_conf-coimbraB.sh</filetree>
+    <filetree seq="config_routersC" root="/root/" perms="777">conf-coimbra/satP_conf-coimbraC.sh</filetree>
+    <exec seq="on_boot" type="verbatim" ostype="system">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+	    echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+    <exec seq="config_routersA" type="verbatim">
+	    sleep 1
+	      ./root/satP_conf-coimbraA.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+	    sleep 1
+            ./root/satP_conf-coimbraB.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+	    sleep 1
+            ./root/satP_conf-coimbraC.sh
+    </exec>
+  </vm>
+
+  <vm name="P" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net1">
+	<ipv4>10.1.0.2/30</ipv4>
+    </if>
+    <if id="2" net="Net2">
+        <ipv4>10.1.0.65/30</ipv4>
+    </if>
+    <route type="ipv4" gw="10.1.0.66">default</route>
+    <route type="ipv4" gw="10.1.0.1">10.0.0.0/24</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf-coimbra/P_conf-coimbra.sh</filetree>
+    <exec seq="on_boot" type="verbatim" ostype="system">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+	    echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+    <exec seq="config_routersA" type="verbatim">
+            ./root/P_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersB" type="verbatim">
+            ./root/P_conf-coimbra.sh
+    </exec>
+    <exec seq="config_routersC" type="verbatim">
+            ./root/P_conf-coimbra.sh
+    </exec>
+  </vm>
+
+  <vm name="hTN1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.2/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hTN2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.3/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hTN3" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.4/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hTN4" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.5/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hTN5" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.6/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+<vm name="hNTN1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.2/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hNTN2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.3/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hNTN3" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.4/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hNTN4" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.5/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="hNTN5" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL4">
+      <ipv4>20.0.0.6/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverTN1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.2.0.2/24</ipv4>
+    </if>
+    <filetree seq="on_boot" root="/root/" perms="755">conf-coimbra/</filetree>
+    <route type="ipv4" gw="10.2.0.1">default</route>   
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverTN2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.2.0.3/24</ipv4>
+    </if>
+    <filetree seq="on_boot" root="/root/" perms="755">conf-coimbra/</filetree>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverTN3" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.2.0.4/24</ipv4>
+    </if>
+    <filetree seq="on_boot" root="/root/" perms="755">conf-coimbra/</filetree>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverTN4" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.2.0.5/24</ipv4>
+    </if>
+    <filetree seq="on_boot" root="/root/" perms="755">conf-coimbra/</filetree>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverTN5" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.2.0.6/24</ipv4>
+    </if>
+    <filetree seq="on_boot" root="/root/" perms="755">conf-coimbra/</filetree>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverNTN1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL1">
+      <ipv4>20.2.0.2/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+
+  <vm name="serverNTN2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL1">
+      <ipv4>20.2.0.3/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverNTN3" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL1">
+      <ipv4>20.2.0.4/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverNTN4" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL1">
+      <ipv4>20.2.0.5/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="serverNTN5" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="ISL1">
+      <ipv4>20.2.0.6/24</ipv4>
+    </if>
+    <route type="ipv4" gw="20.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf-coimbra/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+</vnx>

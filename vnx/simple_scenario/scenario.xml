@@ -33,9 +33,7 @@
     <forwarding type="ip" />
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
     <filetree seq="on_boot" root="/root/" perms="777">conf/PE1_conf.sh</filetree>
-    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentA</filetree>
-    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentB</filetree>
-    <filetree seq="on_boot" root="/root/" perms="777">conf2/ExperimentC</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/get_queue_packets.py</filetree>
     <exec seq="on_boot" type="verbatim">
 	    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
  	    echo 1 > /proc/sys/net/ipv4/ip_forward

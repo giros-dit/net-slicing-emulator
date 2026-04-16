@@ -1,0 +1,24 @@
+127.0.0.1       localhost
+10.2.0.2	serverTN1
+10.2.0.3	serverTN2
+10.2.0.4	serverTN3
+10.2.0.5	serverTN4
+10.2.0.6	serverTN5
+20.2.0.2        serverNTN1
+20.2.0.3        serverNTN2
+20.2.0.4        serverNTN3
+20.2.0.5       serverNTN4
+20.2.0.6       serverNTN5
+10.0.0.2	hTN1
+10.0.0.3        hTN2
+10.0.0.4        hTN3
+10.0.0.5        hTN4
+10.0.0.6        hTN5
+20.0.0.2        hNTN1
+20.0.0.3        hNTN2
+20.0.0.4        hNTN3
+20.0.0.5       hNTN4
+20.0.0.6       hNTN5
+
+
+
