@@ -181,23 +181,164 @@ flow_styles = {
     "TND": dict(label="TND", color="#610B0B", marker="p", linestyle="-", markersize=2, linewidth=1),
 }
 
-exp_name = "exp1"
-pkts_sent_path1 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE1-e1.pcap"))
-pkts_sent_path2 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_P1-e3.pcap"))
-pkts_received = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE2-e2.pcap"))
+def plot_pdv_consecutive(path_name, flows, delay_by_flow, t0, save_path):
+    """
+    PDV calculado como la diferencia absoluta de delay entre
+    paquetes consecutivos. Para cada step se representa el
+    máximo valor obtenido.
+    """
+    plt.figure(figsize=(10, 7))
 
-path1_t0 = min(pkt.time for pkt in pkts_sent_path1 if IP in pkt)
-bw_sent_path1, sent_dict_path1 = build_sent_metrics(pkts_sent_path1, path1_t0, "10.0.0.")
-bw_received_path1, delays_path1 = build_received_metrics(pkts_received, sent_dict_path1.copy(), path1_t0, "10.0.0.")
-plot_bw_generated(f"Path 1 - {exp_name}", path1_flows, bw_sent_path1, BASE_DIR / f"results/bw_gen_path1_{exp_name}.tex")
-plot_bw_received(f"Path 1 - {exp_name}", path1_flows, bw_received_path1, BASE_DIR / f"results/bw_recv_path1_{exp_name}.tex")
-plot_delay(f"Path 1 - {exp_name}", path1_flows, delays_path1, path1_t0, BASE_DIR / f"results/latency_path1_{exp_name}.tex")
+    for flow_id in flows:
+        groups = delay_by_flow.get(flow_id, [])
+        if len(groups) < 2:
+            continue
 
-path2_t0 = min(pkt.time for pkt in pkts_sent_path2 if IP in pkt)
-bw_sent_path2, sent_dict_path2 = build_sent_metrics(pkts_sent_path2, path2_t0, "10.3.0.")
-bw_received_path2, delays_path2 = build_received_metrics(pkts_received, sent_dict_path2.copy(), path2_t0, "10.3.0.")
-plot_bw_generated(f"Path 2 - {exp_name}", path2_flows, bw_sent_path2, BASE_DIR / f"results/bw_gen_path2_{exp_name}.tex")
-plot_bw_received(f"Path 2 - {exp_name}", path2_flows, bw_received_path2, BASE_DIR / f"results/bw_recv_path2_{exp_name}.tex")
-plot_delay(f"Path 2 - {exp_name}", path2_flows, delays_path2, path2_t0, BASE_DIR / f"results/latency_path2_{exp_name}.tex")
+        # Ordenar por instante de recepción
+        groups = sorted(groups, key=lambda x: x[0])
+
+        interval_map = defaultdict(list)
+
+        all_pdv = []
+
+        previous_delay = None
+
+        for recv_time, delay in groups:
+            if previous_delay is not None:
+                pdv = abs(delay - previous_delay)
+                all_pdv.append(pdv)
+                interval = int((recv_time - t0) / step_lat + 1)
+                interval_map[interval].append(pdv)
+
+            previous_delay = delay
+
+        x = []
+        y = []
+
+        for interval in sorted(interval_map):
+            x.append(interval * step_lat * 1000)
+            y.append(max(interval_map[interval]) * 1000)
+
+        mean_pdv = sum(all_pdv) / len(all_pdv)
+
+        print(
+            f"{path_name} - {flow_id}: "
+            f"PDV medio entre paquetes consecutivos = "
+            f"{mean_pdv * 1000:.3f} ms"
+        )
+
+        style = flow_styles.get(flow_id, {})
+
+        plt.plot(
+            x,
+            y,
+            label=style.get("label", flow_id),
+            color=style.get("color"),
+            marker=style.get("marker"),
+            linestyle=style.get("linestyle"),
+            markersize=style.get("markersize"),
+            linewidth=style.get("linewidth"),
+        )
+
+    plt.xlabel("t (ms)")
+    plt.ylabel("PDV (ms)")
+    plt.title(f"PDV entre paquetes consecutivos - {path_name}")
+    plt.grid(True)
+    plt.xlim(0, 5000)
+    plt.ylim(bottom=0)
+    plt.tight_layout()
+    tikzplotlib.save(str(save_path), axis_width="\\textwidth", axis_height="0.7\\textwidth")
+
+
+def plot_pdv_min_delay(path_name, flows, delay_by_flow, t0, save_path):
+    """
+    PDV calculado como delay - delay_min_global.
+    Para cada step se representa el máximo valor obtenido.
+    """
+    plt.figure(figsize=(10, 7))
+
+    for flow_id in flows:
+        groups = delay_by_flow.get(flow_id, [])
+        if not groups:
+            continue
+
+        # Delay mínimo del experimento para este flujo
+        min_delay = min(delay for _, delay in groups)
+
+        interval_map = defaultdict(list)
+
+        all_pdv = []
+
+        for recv_time, delay in groups:
+            pdv = delay - min_delay
+            all_pdv.append(pdv)
+
+            interval = int((recv_time - t0) / step_lat + 1)
+            interval_map[interval].append(pdv)
+
+        x = []
+        y = []
+
+        for interval in sorted(interval_map):
+            x.append(interval * step_lat * 1000)
+            y.append(max(interval_map[interval]) * 1000)
+
+        mean_pdv = sum(all_pdv) / len(all_pdv)
+
+        print(
+            f"{path_name} - {flow_id}: "
+            f"PDV medio respecto al valor mínimo = "
+            f"{mean_pdv * 1000:.3f} ms"
+        )
+
+        style = flow_styles.get(flow_id, {})
+
+        plt.plot(
+            x,
+            y,
+            label=style.get("label", flow_id),
+            color=style.get("color"),
+            marker=style.get("marker"),
+            linestyle=style.get("linestyle"),
+            markersize=style.get("markersize"),
+            linewidth=style.get("linewidth"),
+        )
+
+    plt.xlabel("t (ms)")
+    plt.ylabel("PDV (ms)")
+    plt.title(f"PDV respecto al delay mínimo - {path_name}")
+    plt.grid(True)
+    plt.xlim(0, 5000)
+    plt.ylim(bottom=0)
+    plt.tight_layout()
+
+    tikzplotlib.save(
+        str(save_path),
+        axis_width="\\textwidth",
+        axis_height="0.7\\textwidth"
+    )
+
+for exp_name in ["exp1", "exp2"]:
+    pkts_sent_path1 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE1-e1.pcap"))
+    pkts_sent_path2 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_P1-e3.pcap"))
+    pkts_received = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE2-e2.pcap"))
+
+    path1_t0 = min(pkt.time for pkt in pkts_sent_path1 if IP in pkt)
+    bw_sent_path1, sent_dict_path1 = build_sent_metrics(pkts_sent_path1, path1_t0, "10.0.0.")
+    bw_received_path1, delays_path1 = build_received_metrics(pkts_received, sent_dict_path1.copy(), path1_t0, "10.0.0.")
+    plot_bw_generated(f"Path 1 - {exp_name}", path1_flows, bw_sent_path1, BASE_DIR / f"results/bw_gen_path1_{exp_name}.tex")
+    plot_bw_received(f"Path 1 - {exp_name}", path1_flows, bw_received_path1, BASE_DIR / f"results/bw_recv_path1_{exp_name}.tex")
+    plot_delay(f"Path 1 - {exp_name}", path1_flows, delays_path1, path1_t0, BASE_DIR / f"results/latency_path1_{exp_name}.tex")
+    plot_pdv_consecutive(f"Path 1 - {exp_name}", path1_flows, delays_path1, path1_t0, BASE_DIR / f"results/pdv_consecutive_path1_{exp_name}.tex")
+    plot_pdv_min_delay(f"Path 1 - {exp_name}", path1_flows, delays_path1, path1_t0, BASE_DIR / f"results/pdv_min_path1_{exp_name}.tex")
+
+    path2_t0 = min(pkt.time for pkt in pkts_sent_path2 if IP in pkt)
+    bw_sent_path2, sent_dict_path2 = build_sent_metrics(pkts_sent_path2, path2_t0, "10.3.0.")
+    bw_received_path2, delays_path2 = build_received_metrics(pkts_received, sent_dict_path2.copy(), path2_t0, "10.3.0.")
+    plot_bw_generated(f"Path 2 - {exp_name}", path2_flows, bw_sent_path2, BASE_DIR / f"results/bw_gen_path2_{exp_name}.tex")
+    plot_bw_received(f"Path 2 - {exp_name}", path2_flows, bw_received_path2, BASE_DIR / f"results/bw_recv_path2_{exp_name}.tex")
+    plot_delay(f"Path 2 - {exp_name}", path2_flows, delays_path2, path2_t0, BASE_DIR / f"results/latency_path2_{exp_name}.tex")
+    plot_pdv_consecutive(f"Path 2 - {exp_name}", path2_flows, delays_path2, path2_t0, BASE_DIR / f"results/pdv_consecutive_path2_{exp_name}.tex")
+    plot_pdv_min_delay(f"Path 2 - {exp_name}", path2_flows, delays_path2, path2_t0, BASE_DIR / f"results/pdv_min_path2_{exp_name}.tex")
 
 plt.show()
