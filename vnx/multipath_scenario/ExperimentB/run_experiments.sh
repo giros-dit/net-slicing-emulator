@@ -1,5 +1,10 @@
 #!/bin/bash
 
+rm -f capturas/*
+
+lxc-attach -n PE3 -- bash ./root/ExperimentB/PE3_conf.sh
+lxc-attach -n P2 -- bash ./root/ExperimentB/P2_conf.sh
+
 lxc-attach -n P1 -- bash ./root/ExperimentB/P1_conf1.sh
 echo "==== EXPERIMENTO 1 ===="
 ./captura.sh exp1 &

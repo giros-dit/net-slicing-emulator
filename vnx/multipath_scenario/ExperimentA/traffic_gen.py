@@ -16,28 +16,20 @@ flow_seq = defaultdict(int)
 host_macs = {
     "10.0.0.2": "00:00:00:00:01:02",
     "10.0.0.3": "00:00:00:00:01:03",
-    #"10.0.0.4": "00:00:00:00:01:04",
-    #"10.0.0.5": "00:00:00:00:01:05",
+    "10.0.0.4": "00:00:00:00:01:04",
+    "10.0.0.5": "00:00:00:00:01:05",
     "10.0.0.6": "00:00:00:00:01:06",
     "10.0.0.7": "00:00:00:00:01:07",
-    "10.0.0.8": "00:00:00:00:01:08",
-    "10.0.0.9": "00:00:00:00:01:09",
-    #"10.0.0.10": "00:00:00:00:01:0A",
-    #"10.0.0.11": "00:00:00:00:01:0B",
-    "10.0.0.12": "00:00:00:00:01:0C",
-    "10.0.0.13": "00:00:00:00:01:0D",
+    #"10.0.0.8": "00:00:00:00:01:08",
+    #"10.0.0.9": "00:00:00:00:01:09",
     "10.3.0.2": "00:00:00:00:03:02",
     "10.3.0.3": "00:00:00:00:03:03",
-    #"10.3.0.4": "00:00:00:00:03:04",
-    #"10.3.0.5": "00:00:00:00:03:05",
+    "10.3.0.4": "00:00:00:00:03:04",
+    "10.3.0.5": "00:00:00:00:03:05",
     "10.3.0.6": "00:00:00:00:03:06",
     "10.3.0.7": "00:00:00:00:03:07",
-    "10.3.0.8": "00:00:00:00:03:08",
-    "10.3.0.9": "00:00:00:00:03:09",
-    #"10.3.0.10": "00:00:00:00:03:0A",
-    #"10.3.0.11": "00:00:00:00:03:0B",
-    "10.3.0.12": "00:00:00:00:03:0C",
-    "10.3.0.13": "00:00:00:00:03:0D",
+    #"10.3.0.8": "00:00:00:00:03:08",
+    #"10.3.0.9": "00:00:00:00:03:09",
 }
 
 dst_mac1 = subprocess.check_output(
@@ -45,34 +37,34 @@ dst_mac1 = subprocess.check_output(
     text=True
 ).strip()
 dst_mac2 = subprocess.check_output(
-    ["sudo", "lxc-attach", "-n", "P1", "--", "cat", "/sys/class/net/eth3/address"],
+    ["sudo", "lxc-attach", "-n", "PE3", "--", "cat", "/sys/class/net/eth1/address"],
     text=True
 ).strip()
 
 # Tráfico en ráfagas (isochronous)
 bursts1 = [
     {"src": "10.0.0.3", "dst": "10.2.0.3", "interval": 1.0, "count": 58},   
-    {"src": "10.0.0.7", "dst": "10.2.0.7", "interval": 1.0, "count": 66},  
-    {"src": "10.0.0.9", "dst": "10.2.0.9", "interval": 1.0, "count": 23},  
+    {"src": "10.0.0.5", "dst": "10.2.0.5", "interval": 1.0, "count": 66},  
+    {"src": "10.0.0.7", "dst": "10.2.0.7", "interval": 1.0, "count": 23},  
 ]
 
 bursts2 = [
-    {"src": "10.3.0.3", "dst": "10.2.0.3", "interval": 5.0, "count": 58},   
-    {"src": "10.3.0.7", "dst": "10.2.0.7", "interval": 5.0, "count": 66},  
-    {"src": "10.3.0.9", "dst": "10.2.0.9", "interval": 5.0, "count": 23},
+    {"src": "10.3.0.3", "dst": "10.5.0.3", "interval": 5.0, "count": 58},   
+    {"src": "10.3.0.5", "dst": "10.5.0.5", "interval": 5.0, "count": 66},  
+    {"src": "10.3.0.7", "dst": "10.5.0.7", "interval": 5.0, "count": 23},
 ]
 
 # Flujos constantes (aprox. en pps)
 const_flows1 = [
     {"src": "10.0.0.2", "dst": "10.2.0.2", "pps": 4942},    # h1-server1 (60 Mbps)
-    {"src": "10.0.0.6", "dst": "10.2.0.6", "pps": 2434},    # h5-server5 (30 Mbps)
-    {"src": "10.0.0.8", "dst": "10.2.0.8", "pps": 810.3},    # h7-server7 (10 Mbps)
+    {"src": "10.0.0.4", "dst": "10.2.0.4", "pps": 2434},    # h5-server5 (30 Mbps)
+    {"src": "10.0.0.6", "dst": "10.2.0.6", "pps": 810.3},    # h7-server7 (10 Mbps)
 ]
 
 const_flows2 = [
-    {"src": "10.3.0.2", "dst": "10.2.0.2", "pps": 5000},    # h1-server1 (60 Mbps)
-    {"src": "10.3.0.6", "dst": "10.2.0.6", "pps": 2500},    # h5-server5 (30 Mbps)
-    {"src": "10.3.0.8", "dst": "10.2.0.8", "pps": 833.3},    # h7-server7 (10 Mbps)
+    {"src": "10.3.0.2", "dst": "10.5.0.2", "pps": 5000},    # h1-server1 (60 Mbps)
+    {"src": "10.3.0.4", "dst": "10.5.0.4", "pps": 2500},    # h5-server5 (30 Mbps)
+    {"src": "10.3.0.6", "dst": "10.5.0.6", "pps": 833.3},    # h7-server7 (10 Mbps)
 ]
 
 # Generador de tráfico constante
@@ -102,17 +94,17 @@ def generate_constant(flow, t0, duration, start, dst_mac):
 # Generador de ráfagas
 def generate_burst(flow, t0, start, duration, dst_mac):
     packets = []
+    current_time = 0
     burst_count = flow["count"] 
     interval = flow["interval"]
     flow_id = (flow["src"], flow["dst"])
 
-    t = 0
-    while t < duration:
+    while current_time < duration:
 
         for i in range(burst_count):
             src_ip = flow["src"]
             src_mac = host_macs[src_ip]
-            pkt_time = t0 + start + t + i * 0.000004
+            pkt_time = t0 + start + current_time + i * 0.000004
 
             flow_seq[flow_id] += 1
             seq = flow_seq[flow_id]
@@ -124,7 +116,7 @@ def generate_burst(flow, t0, start, duration, dst_mac):
             pkt.time = pkt_time
             packets.append(pkt)
 
-        t += interval
+        current_time += interval
     return packets
 
 

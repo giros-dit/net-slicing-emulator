@@ -16,22 +16,22 @@ def flow_key_for_ip(ip, prefix):
         "10.0.0.": {
             "10.0.0.2": "TNB",
             "10.0.0.3": "TNB",
-            "10.0.0.6": "TNC",
-            "10.0.0.7": "TNC",
-            "10.0.0.8": "TNA",
-            "10.0.0.9": "TNA",
-            "10.0.0.10": "TND",
-            "10.0.0.11": "TND",
+            "10.0.0.4": "TNC",
+            "10.0.0.5": "TNC",
+            "10.0.0.6": "TNA",
+            "10.0.0.7": "TNA",
+            "10.0.0.8": "TND",
+            "10.0.0.9": "TND",
         },
         "10.3.0.": {
             "10.3.0.2": "TNB",
             "10.3.0.3": "TNB",
-            "10.3.0.6": "TNC",
-            "10.3.0.7": "TNC",
-            "10.3.0.8": "TNA",
-            "10.3.0.9": "TNA",
-            "10.3.0.10": "TND",
-            "10.3.0.11": "TND",
+            "10.3.0.4": "TNC",
+            "10.3.0.5": "TNC",
+            "10.3.0.6": "TNA",
+            "10.3.0.7": "TNA",
+            "10.3.0.8": "TND",
+            "10.3.0.9": "TND",
         },
     }
     return mapping.get(prefix, {}).get(ip)
@@ -304,12 +304,13 @@ def plot_pdv_min_delay(path_name, flows, delay_by_flow, t0, save_path):
 
 for exp_name in ["exp1", "exp2"]:
     pkts_sent_path1 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE1-e1.pcap"))
-    pkts_sent_path2 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_P1-e3.pcap"))
-    pkts_received = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE2-e2.pcap"))
+    pkts_sent_path2 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE3-e1.pcap"))
+    pkts_received_path1 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE2-e2.pcap"))
+    pkts_received_path2 = rdpcap(str(CAPTURES_DIR / f"{exp_name}_PE4-e2.pcap"))
 
     path1_t0 = min(pkt.time for pkt in pkts_sent_path1 if IP in pkt)
     bw_sent_path1, sent_dict_path1 = build_sent_metrics(pkts_sent_path1, path1_t0, "10.0.0.")
-    bw_received_path1, delays_path1 = build_received_metrics(pkts_received, sent_dict_path1.copy(), path1_t0, "10.0.0.")
+    bw_received_path1, delays_path1 = build_received_metrics(pkts_received_path1, sent_dict_path1.copy(), path1_t0, "10.0.0.")
     #plot_bw_generated(f"Path 1 - {exp_name}", path1_flows, bw_sent_path1, BASE_DIR / f"results/bw_gen_path1_{exp_name}.tex")
     #plot_bw_received(f"Path 1 - {exp_name}", path1_flows, bw_received_path1, BASE_DIR / f"results/bw_recv_path1_{exp_name}.tex")
     plot_delay(f"Path 1 - {exp_name}", path1_flows, delays_path1, path1_t0, BASE_DIR / f"results/latency_path1_{exp_name}.tex")
@@ -318,7 +319,7 @@ for exp_name in ["exp1", "exp2"]:
 
     path2_t0 = min(pkt.time for pkt in pkts_sent_path2 if IP in pkt)
     bw_sent_path2, sent_dict_path2 = build_sent_metrics(pkts_sent_path2, path2_t0, "10.3.0.")
-    bw_received_path2, delays_path2 = build_received_metrics(pkts_received, sent_dict_path2.copy(), path2_t0, "10.3.0.")
+    bw_received_path2, delays_path2 = build_received_metrics(pkts_received_path2, sent_dict_path2.copy(), path2_t0, "10.3.0.")
     #plot_bw_generated(f"Path 2 - {exp_name}", path2_flows, bw_sent_path2, BASE_DIR / f"results/bw_gen_path2_{exp_name}.tex")
     #plot_bw_received(f"Path 2 - {exp_name}", path2_flows, bw_received_path2, BASE_DIR / f"results/bw_recv_path2_{exp_name}.tex")
     plot_delay(f"Path 2 - {exp_name}", path2_flows, delays_path2, path2_t0, BASE_DIR / f"results/latency_path2_{exp_name}.tex")

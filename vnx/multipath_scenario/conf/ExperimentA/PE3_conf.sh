@@ -41,16 +41,16 @@ tc qdisc add dev eth2 parent 20:2 handle 200: bfifo limit 100060
 tc qdisc add dev eth2 parent 2:3 handle 23: bfifo limit 193232
 
 echo "Installing filters"
-tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.2/31 classid 1:20
-tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.4/31 classid 1:31
-tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.0.0.6/31 classid 1:21
-tc filter add dev ifb0 protocol ip parent 1:0 prio 2 u32 match ip src 10.0.0.0/24 classid 1:30
+tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.3.0.2/31 classid 1:20
+tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.3.0.4/31 classid 1:31
+tc filter add dev ifb0 protocol ip parent 1:0 prio 1 u32 match ip src 10.3.0.6/31 classid 1:21
+tc filter add dev ifb0 protocol ip parent 1:0 prio 2 u32 match ip src 10.3.0.0/24 classid 1:30
 tc filter add dev ifb0 protocol ip parent 1:0 prio 7 u32 match ip src 0/0 action drop
 
-tc filter add dev eth2 protocol ip parent 1:0 prio 0 u32 match ip src 10.0.0.0/24 classid 1:1
-tc filter add dev eth2 protocol ip parent 2:0 prio 1 u32 match ip src 10.0.0.6/31 classid 2:1
-tc filter add dev eth2 protocol ip parent 2:0 prio 3 u32 match ip src 10.0.0.0/24 classid 2:2
-tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.0.0.2/31 classid 20:1
-tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.0.0.4/31 classid 20:2
-tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.0.0.8/31 classid 20:3
+tc filter add dev eth2 protocol ip parent 1:0 prio 0 u32 match ip src 10.3.0.0/24 classid 1:1
+tc filter add dev eth2 protocol ip parent 2:0 prio 1 u32 match ip src 10.3.0.6/31 classid 2:1
+tc filter add dev eth2 protocol ip parent 2:0 prio 3 u32 match ip src 10.3.0.0/24 classid 2:2
+tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.3.0.2/31 classid 20:1
+tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.3.0.4/31 classid 20:2
+tc filter add dev eth2 protocol ip parent 20:0 prio 5 u32 match ip src 10.3.0.8/31 classid 20:3
 tc filter add dev eth2 protocol arp parent 2:0 prio 0 u32 match u32 0 0 classid 2:3
