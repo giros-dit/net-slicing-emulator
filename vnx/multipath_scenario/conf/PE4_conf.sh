@@ -1,7 +1,10 @@
+echo "Deleting previous qdisc"
+tc qdisc del dev eth2 root
+
 echo "Creating Hierarchical DRR"
 #Set Link Speed
 tc qdisc add dev eth2 root handle 1: htb
-tc class add dev eth2 parent 1: classid 1:1 htb rate 100mbit
+tc class add dev eth2 parent 1: classid 1:1 htb rate 200mbit
 
 #Set Hierarchical DRR
 tc qdisc add dev eth2 parent 1:1 handle 10: drr

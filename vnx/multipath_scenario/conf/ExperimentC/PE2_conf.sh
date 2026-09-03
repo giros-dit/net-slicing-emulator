@@ -26,9 +26,12 @@ tc qdisc add dev eth2 parent 200:2 handle 220: bfifo limit 1500
 
 echo "Installing filters"
 tc filter add dev eth2 protocol ip parent 1:0 prio 0 u32 match ip src 10.0.0.0/24 classid 1:1
+tc filter add dev eth2 protocol ip parent 1:0 prio 0 u32 match ip src 10.3.0.8/31 classid 1:1
 
 tc filter add dev eth2 protocol ip parent 10:0 prio 1 u32 match ip src 10.0.0.2/31 classid 10:1
 tc filter add dev eth2 protocol ip parent 100:0 prio 1 u32 match ip src 10.0.0.2/31 classid 100:1
+tc filter add dev eth2 protocol ip parent 10:0 prio 0 u32 match ip src 10.3.0.8/31 classid 10:1
+tc filter add dev eth2 protocol ip parent 100:0 prio 0 u32 match ip src 10.3.0.8/31 classid 100:1
 
 tc filter add dev eth2 protocol ip parent 10:0 prio 1 u32 match ip src 10.0.0.6/31 classid 10:1
 tc filter add dev eth2 protocol ip parent 100:0 prio 1 u32 match ip src 10.0.0.6/31 classid 100:2
