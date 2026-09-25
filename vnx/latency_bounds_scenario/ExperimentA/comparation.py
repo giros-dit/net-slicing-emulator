@@ -7,8 +7,8 @@ import re
 import struct
 
 # Load packets in PE1-e2 and PE2-e2
-pkts_sent = rdpcap("PE1.pcap")
-pkts_received = rdpcap("PE2.pcap")
+pkts_sent = rdpcap("PE1-e2.pcap")
+pkts_received = rdpcap("PE2-e2.pcap")
 
 src_ips = set()
 sent_dict = {}

@@ -161,7 +161,7 @@ tikzplotlib.save("bw_expb.tex", axis_width="\\textwidth", axis_height="0.7\\text
 
 
 # Plot the delays
-plt.figure(figsize=(10,7))
+fig_delays, ax_delays = plt.subplots(figsize=(10,7))
 
 for (ip1, ip2), intervals in delay_by_pair.items():
     style = flow_styles.get(ip1)
@@ -173,15 +173,21 @@ for (ip1, ip2), intervals in delay_by_pair.items():
         y.append(max_delay * 1000)
 
     if style:
-        plt.plot(x, y, label=style["label"], color=style["color"], marker=style["marker"], linestyle=style["linestyle"], markersize=style["markersize"], linewidth=style["linewidth"])
+        ax_delays.plot(x, y, label=style["label"], color=style["color"], marker=style["marker"], linestyle=style["linestyle"], markersize=style["markersize"], linewidth=style["linewidth"])
 
-plt.xlabel("t (ms)")
-plt.ylabel("Latency (ms)")
-plt.grid(True)
-#plt.legend()
-plt.ylim(0,20)
-plt.xlim(0,1000)
-plt.tight_layout()
+ax_delays.axhline(3, color='#222222', linestyle='-', linewidth=4)
+ax_delays.axhline(15, color='#008C95', linestyle='-', linewidth=4)
+ax_delays.axhline(30, color='#B03060', linestyle='-', linewidth=4)
+ax_delays.set_xlabel("t (ms)")
+ax_delays.set_ylabel("Latency (ms)")
+ax_delays.grid(True)
+ax_delays.set_xlim(0,1000)
+ax_delays.text(1.01, 3, 'TNA', transform=ax_delays.get_yaxis_transform(), color='#222222', va='center', ha='left', fontsize=12, fontweight='bold', clip_on=False)
+ax_delays.text(1.01, 15, 'TNB', transform=ax_delays.get_yaxis_transform(), color='#008C95', va='center', ha='left', fontsize=12, fontweight='bold', clip_on=False)
+ax_delays.text(1.01, 30, 'TNC', transform=ax_delays.get_yaxis_transform(), color='#B03060', va='center', ha='left', fontsize=12, fontweight='bold', clip_on=False)
+ax_delays.set_ylim(0, 60)
+ax_delays.set_xlim(0, 1000)
+fig_delays.tight_layout()
 
 tikzplotlib.save("latency_expb.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 

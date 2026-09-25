@@ -154,8 +154,8 @@ for (ip1, ip2), intervals in lost_by_pair_interval.items():
 plt.xlabel("t (ms)")
 plt.ylabel("Lost Packets per Interval")
 plt.grid(True)
-plt.xlim(200,300)
-plt.ylim(0,8)
+plt.xlim(0,1000)
+plt.ylim(0,10)
 
 plt.tight_layout()
 

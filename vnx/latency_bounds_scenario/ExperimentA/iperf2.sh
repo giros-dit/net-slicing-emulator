@@ -1,13 +1,22 @@
-echo "Deleting previous data"
-sudo -S rm -rf metrics/*
-sudo -S rm -rf test_results/files/*
+#!/bin/bash
 
-mkdir -p metrics
-mkdir -p test_results/files
-chmod 744 metrics
-chmod 744 test_results/files
+echo "Deleting previous data"
+sudo rm -f metrics/*
+sudo rm -f test_results/files/*
+sudo rm -f PE*.pcap
 
 sleep 1
+
+FILE1="PE1-e2.pcap"
+FILE2="PE2-e2.pcap"
+
+wireshark -i PE1-e2 -k -f "udp && !icmp" -w $FILE1 &
+PID1=$!
+
+wireshark -i PE2-e2 -k -f "udp && !icmp" -w $FILE2 &
+PID2=$!
+
+sleep 10
 
 echo "Initiating iperf servers"
 sudo lxc-attach -n server1 -- iperf -s -u -e -i 0.1 > metrics1 &
@@ -34,7 +43,7 @@ sudo parallel ::: \
     "sudo lxc-attach -n h2 -- iperf -c server7 -i 0.1 -u --isochronous=0.5:19p --ipg 0.001 -l 1458 -t 50 > metrics1_sender_burst &" \
     "sudo lxc-attach -n h6 -- iperf -c server9 -i 0.1 -u --isochronous=0.2:55p --ipg 0.001 -l 1458 -t 35 > metrics3_sender_burst &" \
     "sudo lxc-attach -n h4 -- iperf -c server8 -i 0.1 -u --isochronous=0.2:18p --ipg 0.001 -l 1458 -t 50 > metrics2_sender_burst &" \
-    "sudo lxc-attach -n h8 -- iperf -c server10 -i 0.1 -u --isochronous=1:23p --ipg 0.001 -l 1458 -t 35 > metrics4_sender_burst &" \
+    "sudo lxc-attach -n h8 -- iperf -c server10 -i 0.1 -u --isochronous=1:22p --ipg 0.001 -l 1458 -t 35 > metrics4_sender_burst &" \
     "sudo lxc-attach -n h12 -- iperf -c server11 -i 0.1 -u --isochronous=0.5:13p --ipg 0.001 -l 1458 -t 50 > metrics5_sender_burst &"
 
 sleep 35
@@ -48,10 +57,9 @@ sudo ./latency_server2.sh metrics1 metrics2 metrics3 metrics4 metrics5 metrics6 
 sudo ./bandwidth_server.sh metrics1_sender metrics2_sender metrics3_sender metrics4_sender metrics5_sender metrics6_sender metrics1_sender_burst metrics2_sender_burst metrics3_sender_burst metrics4_sender_burst metrics5_sender_burst
 
 sleep 10
-cd metrics/
-sudo mv ../metrics* .
+sudo mv metrics* metrics/
 
-cd ../test_results
+cd test_results
 
 echo "Processing data"
 for i in $(seq 1 5); do
@@ -65,5 +73,10 @@ python3 process_data.py
 
 echo "Generating plot"
 python3 plot.py
+
+# cd ..
+
+# echo "Generating packet loss"
+# python3 comparation.py
 
 echo "Test completed"

@@ -8,10 +8,10 @@ tc qdisc add dev eth2 parent 2:2 handle 20: drr
 tc class add dev eth2 parent 20: classid 20:1 drr quantum 1875
 tc class add dev eth2 parent 20: classid 20:2 drr quantum 1500
 
-tc qdisc add dev eth2 parent 2:1 handle 10: bfifo limit 35117
-tc qdisc add dev eth2 parent 20:1 handle 100: bfifo limit 68378
-tc qdisc add dev eth2 parent 20:2 handle 200: bfifo limit 126520
-tc qdisc add dev eth2 parent 2:3 handle 300: bfifo limit 193389
+tc qdisc add dev eth2 parent 2:1 handle 10: bfifo limit 33028
+tc qdisc add dev eth2 parent 20:1 handle 100: bfifo limit 69200
+tc qdisc add dev eth2 parent 20:2 handle 200: bfifo limit 127195
+tc qdisc add dev eth2 parent 2:3 handle 23: bfifo limit 193573
 
 
 echo "Installing filters"

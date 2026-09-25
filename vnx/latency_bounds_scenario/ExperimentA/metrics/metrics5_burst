@@ -1,0 +1,508 @@
+------------------------------------------------------------
+Server listening on UDP port 5001 with pid 190
+Read buffer size: 1.44 KByte (Dist bin width= 183 Byte)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.2.0.12%eth1 port 5001 connected with 10.0.0.13 port 53137 (isoch) (sock=3) (peer 2.1.5) on 2026-09-25 11:26:54 (UTC)
+[ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
+[  1] 0.0000-0.1000 sec  18.5 KBytes  1.52 Mbits/sec   0.243 ms 0/13 (0%) 5.259/3.396/8.257/1.615 ms 2709 pps 36
+[  1] 0.1000-0.2000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.2000-0.3000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.3000-0.4000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.4000-0.5000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.5000-0.6000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.6000-0.7000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.7000-0.8000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.8000-0.9000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 0.9000-1.0000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.0000-1.1000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.1000-1.2000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.2000-1.3000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.3000-1.4000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.4000-1.5000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.5000-1.6000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.6000-1.7000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.7000-1.8000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 1.8000-1.9000 sec  1.42 KBytes   117 Kbits/sec   0.548 ms 1/2 (50%) 3.133/3.133/3.133/0.000 ms 1 pps 5
+[  1] 1.9000-2.0000 sec  1.42 KBytes   117 Kbits/sec   0.539 ms 0/1 (0%) 3.546/3.546/3.546/0.000 ms 2088 pps 4
+[  1] 2.0000-2.1000 sec  15.7 KBytes  1.28 Mbits/sec   0.401 ms 0/11 (0%) 4.998/3.783/6.394/0.812 ms 3817 pps 32
+[  1] 2.1000-2.2000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.2000-2.3000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.3000-2.4000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.4000-2.5000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.5000-2.6000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.6000-2.7000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.7000-2.8000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.8000-2.9000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 2.9000-3.0000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.0000-3.1000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.1000-3.2000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.2000-3.3000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.3000-3.4000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.4000-3.5000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.5000-3.6000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.6000-3.7000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.7000-3.8000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 3.8000-3.9000 sec  1.42 KBytes   117 Kbits/sec   0.771 ms 0/1 (0%) 0.066/0.066/0.066/0.000 ms 1 pps 221
+[  1] 3.9000-4.0000 sec  1.42 KBytes   117 Kbits/sec   0.936 ms 0/1 (0%) 3.479/3.479/3.479/0.000 ms 288 pps 4
+[  1] 4.0000-4.1000 sec  15.7 KBytes  1.28 Mbits/sec   0.574 ms 0/11 (0%) 4.837/3.585/5.954/0.801 ms 4365 pps 33
+[  1] 4.1000-4.2000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.2000-4.3000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.3000-4.4000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.4000-4.5000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.5000-4.6000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.6000-4.7000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.7000-4.8000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.8000-4.9000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 4.9000-5.0000 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.0000-5.1001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.1001-5.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.2001-5.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.3001-5.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.4001-5.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.5001-5.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.6001-5.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.7001-5.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.8001-5.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 5.9001-6.0001 sec  1.42 KBytes   117 Kbits/sec   0.693 ms 0/1 (0%) 3.471/3.471/3.471/0.000 ms 1 pps 4
+[  1] 6.0001-6.1001 sec  17.1 KBytes  1.40 Mbits/sec   0.452 ms 0/12 (0%) 4.950/3.515/6.366/0.946 ms 4003 pps 35
+[  1] 6.1001-6.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.2001-6.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.3001-6.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.4001-6.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.5001-6.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.6001-6.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.7001-6.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.8001-6.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 6.9001-7.0001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.0001-7.1001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.1001-7.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.2001-7.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.3001-7.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.4001-7.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.5001-7.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.6001-7.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.7001-7.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 7.8001-7.9001 sec  1.42 KBytes   117 Kbits/sec   0.818 ms 0/1 (0%) 0.059/0.059/0.059/0.000 ms 1 pps 247
+[  1] 7.9001-8.0001 sec  1.42 KBytes   117 Kbits/sec   0.960 ms 0/1 (0%) 3.151/3.151/3.151/0.000 ms 321 pps 5
+[  1] 8.0001-8.1001 sec  15.7 KBytes  1.28 Mbits/sec   0.734 ms 0/11 (0%) 4.959/3.387/8.138/1.444 ms 2183 pps 32
+[  1] 8.1001-8.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.2001-8.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.3001-8.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.4001-8.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.5001-8.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.6001-8.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.7001-8.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.8001-8.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 8.9001-9.0001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.0001-9.1001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.1001-9.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.2001-9.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.3001-9.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.4001-9.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.5001-9.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.6001-9.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.7001-9.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 9.8001-9.9001 sec  1.42 KBytes   117 Kbits/sec   0.999 ms 0/1 (0%) 3.171/3.171/3.171/0.000 ms 1 pps 5
+[  1] 9.9001-10.0001 sec  1.42 KBytes   117 Kbits/sec   0.969 ms 0/1 (0%) 3.699/3.699/3.699/0.000 ms 1675 pps 4
+[  1] 10.0001-10.1001 sec  15.7 KBytes  1.28 Mbits/sec   0.618 ms 0/11 (0%) 5.203/3.937/6.667/0.834 ms 3661 pps 31
+[  1] 10.1001-10.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.2001-10.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.3001-10.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.4001-10.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.5001-10.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.6001-10.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.7001-10.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.8001-10.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 10.9001-11.0001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.0001-11.1001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.1001-11.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.2001-11.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.3001-11.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.4001-11.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.5001-11.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.6001-11.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.7001-11.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 11.8001-11.9001 sec  1.42 KBytes   117 Kbits/sec   0.792 ms 0/1 (0%) 3.270/3.270/3.270/0.000 ms 1 pps 4
+[  1] 11.9001-12.0001 sec  1.42 KBytes   117 Kbits/sec   0.775 ms 0/1 (0%) 3.800/3.800/3.800/0.000 ms 1672 pps 4
+[  1] 12.0001-12.1001 sec  15.7 KBytes  1.28 Mbits/sec   0.537 ms 0/11 (0%) 5.327/4.153/7.003/0.860 ms 3398 pps 30
+[  1] 12.1001-12.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.2001-12.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.3001-12.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.4001-12.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.5001-12.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.6001-12.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.7001-12.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.8001-12.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 12.9001-13.0001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.0001-13.1001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.1001-13.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.2001-13.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.3001-13.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.4001-13.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.5001-13.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.6001-13.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.7001-13.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 13.8001-13.9001 sec  1.42 KBytes   117 Kbits/sec   0.938 ms 0/1 (0%) 0.058/0.058/0.058/0.000 ms 1 pps 251
+[  1] 13.9001-14.0001 sec  2.85 KBytes   233 Kbits/sec   1.024 ms 0/2 (0%) 1.708/0.152/3.265/2.201 ms 619 pps 17
+[  1] 14.0001-14.1001 sec  14.2 KBytes  1.17 Mbits/sec   0.809 ms 0/10 (0%) 5.039/3.622/8.283/1.341 ms 1977 pps 29
+[  1] 14.1001-14.2001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.2001-14.3001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.3001-14.4001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.4001-14.5001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.5001-14.6001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.6001-14.7001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.7001-14.8001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.8001-14.9001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 14.9001-15.0001 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.0001-15.1002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.1002-15.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.2002-15.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.3002-15.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.4002-15.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.5002-15.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.6002-15.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.7002-15.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 15.8002-15.9002 sec  1.42 KBytes   117 Kbits/sec   1.066 ms 0/1 (0%) 3.360/3.360/3.360/0.000 ms 1 pps 4
+[  1] 15.9002-16.0002 sec  1.42 KBytes   117 Kbits/sec   1.012 ms 0/1 (0%) 3.568/3.568/3.568/0.000 ms 4202 pps 4
+[  1] 16.0002-16.1002 sec  15.7 KBytes  1.28 Mbits/sec   0.701 ms 0/11 (0%) 5.088/3.803/7.495/1.058 ms 2780 pps 32
+[  1] 16.1002-16.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.2002-16.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.3002-16.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.4002-16.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.5002-16.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.6002-16.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.7002-16.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.8002-16.9002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 16.9002-17.0002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.0002-17.1002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.1002-17.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.2002-17.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.3002-17.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.4002-17.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.5002-17.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.6002-17.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.7002-17.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 17.8002-17.9002 sec  1.42 KBytes   117 Kbits/sec   1.122 ms 0/1 (0%) 0.064/0.064/0.064/0.000 ms 1 pps 228
+[  1] 17.9002-18.0002 sec  1.42 KBytes   117 Kbits/sec   1.273 ms 0/1 (0%) 3.601/3.601/3.601/0.000 ms 278 pps 4
+[  1] 18.0002-18.1002 sec  15.7 KBytes  1.28 Mbits/sec   0.960 ms 0/11 (0%) 5.463/3.739/9.695/1.600 ms 1797 pps 29
+[  1] 18.1002-18.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.2002-18.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.3002-18.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.4002-18.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.5002-18.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.6002-18.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.7002-18.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.8002-18.9002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 18.9002-19.0002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.0002-19.1002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.1002-19.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.2002-19.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.3002-19.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.4002-19.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.5002-19.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.6002-19.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.7002-19.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 19.8002-19.9002 sec  1.42 KBytes   117 Kbits/sec   1.296 ms 0/1 (0%) 3.357/3.357/3.357/0.000 ms 1 pps 4
+[  1] 19.9002-20.0002 sec  1.42 KBytes   117 Kbits/sec   1.285 ms 0/1 (0%) 4.480/4.480/4.480/0.000 ms 837 pps 3
+[  1] 20.0002-20.1002 sec  15.7 KBytes  1.28 Mbits/sec   0.768 ms 0/11 (0%) 6.139/4.837/7.450/0.880 ms 3661 pps 26
+[  1] 20.1002-20.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.2002-20.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.3002-20.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.4002-20.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.5002-20.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.6002-20.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.7002-20.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.8002-20.9002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 20.9002-21.0002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.0002-21.1002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.1002-21.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.2002-21.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.3002-21.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.4002-21.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.5002-21.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.6002-21.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.7002-21.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 21.8002-21.9002 sec  1.42 KBytes   117 Kbits/sec   0.987 ms 0/1 (0%) 3.179/3.179/3.179/0.000 ms 1 pps 5
+[  1] 21.9002-22.0002 sec  1.42 KBytes   117 Kbits/sec   0.952 ms 0/1 (0%) 3.605/3.605/3.605/0.000 ms 2092 pps 4
+[  1] 22.0002-22.1002 sec  15.7 KBytes  1.28 Mbits/sec   0.606 ms 0/11 (0%) 5.209/3.835/6.576/0.892 ms 3667 pps 31
+[  1] 22.1002-22.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.2002-22.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.3002-22.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.4002-22.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.5002-22.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.6002-22.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.7002-22.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.8002-22.9002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 22.9002-23.0002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.0002-23.1002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.1002-23.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.2002-23.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.3002-23.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.4002-23.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.5002-23.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.6002-23.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.7002-23.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 23.8002-23.9002 sec  1.42 KBytes   117 Kbits/sec   0.974 ms 0/1 (0%) 0.087/0.087/0.087/0.000 ms 1 pps 168
+[  1] 23.9002-24.0002 sec  1.42 KBytes   117 Kbits/sec   1.117 ms 0/1 (0%) 3.362/3.362/3.362/0.000 ms 300 pps 4
+[  1] 24.0002-24.1002 sec  15.7 KBytes  1.28 Mbits/sec   0.670 ms 0/11 (0%) 4.711/3.564/5.940/0.803 ms 4168 pps 34
+[  1] 24.1002-24.2002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.2002-24.3002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.3002-24.4002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.4002-24.5002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.5002-24.6002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.6002-24.7002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.7002-24.8002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.8002-24.9002 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 24.9002-25.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.0003-25.1003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.1003-25.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.2003-25.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.3003-25.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.4003-25.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.5003-25.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.6003-25.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.7003-25.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 25.8003-25.9003 sec  1.42 KBytes   117 Kbits/sec   0.803 ms 0/1 (0%) 3.148/3.148/3.148/0.000 ms 1 pps 5
+[  1] 25.9003-26.0003 sec  1.42 KBytes   117 Kbits/sec   0.767 ms 0/1 (0%) 3.369/3.369/3.369/0.000 ms 4184 pps 4
+[  1] 26.0003-26.1003 sec  15.7 KBytes  1.28 Mbits/sec   0.707 ms 0/11 (0%) 5.093/3.604/9.333/1.581 ms 1833 pps 31
+[  1] 26.1003-26.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.2003-26.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.3003-26.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.4003-26.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.5003-26.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.6003-26.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.7003-26.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.8003-26.9003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 26.9003-27.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.0003-27.1003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.1003-27.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.2003-27.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.3003-27.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.4003-27.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.5003-27.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.6003-27.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.7003-27.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 27.8003-27.9003 sec  1.42 KBytes   117 Kbits/sec   1.046 ms 0/1 (0%) 3.205/3.205/3.205/0.000 ms 1 pps 5
+[  1] 27.9003-28.0003 sec  1.42 KBytes   117 Kbits/sec   0.994 ms 0/1 (0%) 3.423/3.423/3.423/0.000 ms 4202 pps 4
+[  1] 28.0003-28.1003 sec  15.7 KBytes  1.28 Mbits/sec   0.610 ms 0/11 (0%) 4.826/3.659/6.036/0.800 ms 4162 pps 33
+[  1] 28.1003-28.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.2003-28.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.3003-28.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.4003-28.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.5003-28.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.6003-28.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.7003-28.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.8003-28.9003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 28.9003-29.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.0003-29.1003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.1003-29.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.2003-29.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.3003-29.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.4003-29.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.5003-29.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.6003-29.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.7003-29.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 29.8003-29.9003 sec  1.42 KBytes   117 Kbits/sec   0.740 ms 0/1 (0%) 3.355/3.355/3.355/0.000 ms 1 pps 4
+[  1] 29.9003-30.0003 sec  1.42 KBytes   117 Kbits/sec   0.706 ms 0/1 (0%) 3.557/3.557/3.557/0.000 ms 4202 pps 4
+[  1] 30.0003-30.1003 sec  15.7 KBytes  1.28 Mbits/sec   0.747 ms 0/11 (0%) 5.599/3.914/10.740/1.844 ms 1528 pps 29
+[  1] 30.1003-30.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.2003-30.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.3003-30.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.4003-30.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.5003-30.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.6003-30.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.7003-30.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.8003-30.9003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 30.9003-31.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.0003-31.1003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.1003-31.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.2003-31.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.3003-31.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.4003-31.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.5003-31.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.6003-31.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.7003-31.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 31.8003-31.9003 sec  1.42 KBytes   117 Kbits/sec   1.160 ms 0/1 (0%) 3.387/3.387/3.387/0.000 ms 1 pps 4
+[  1] 31.9003-32.0003 sec  1.42 KBytes   117 Kbits/sec   1.101 ms 0/1 (0%) 3.602/3.602/3.602/0.000 ms 4167 pps 4
+[  1] 32.0003-32.1003 sec  15.7 KBytes  1.28 Mbits/sec   0.930 ms 0/11 (0%) 5.456/3.836/10.526/1.855 ms 1580 pps 29
+[  1] 32.1003-32.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.2003-32.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.3003-32.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.4003-32.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.5003-32.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.6003-32.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.7003-32.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.8003-32.9003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 32.9003-33.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.0003-33.1003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.1003-33.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.2003-33.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.3003-33.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.4003-33.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.5003-33.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.6003-33.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.7003-33.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 33.8003-33.9003 sec  1.42 KBytes   117 Kbits/sec   1.525 ms 0/1 (0%) 0.073/0.073/0.073/0.000 ms 1 pps 200
+[  1] 33.9003-34.0003 sec  1.42 KBytes   117 Kbits/sec   1.638 ms 0/1 (0%) 3.402/3.402/3.402/0.000 ms 298 pps 4
+[  1] 34.0003-34.1003 sec  15.7 KBytes  1.28 Mbits/sec   1.175 ms 0/11 (0%) 5.149/3.640/9.985/1.748 ms 1667 pps 31
+[  1] 34.1003-34.2003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.2003-34.3003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.3003-34.4003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.4003-34.5003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.5003-34.6003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.6003-34.7003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.7003-34.8003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.8003-34.9003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 34.9003-35.0003 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.0003-35.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.1004-35.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.2004-35.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.3004-35.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.4004-35.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.5004-35.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.6004-35.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.7004-35.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 35.8004-35.9004 sec  1.42 KBytes   117 Kbits/sec   1.719 ms 0/1 (0%) 0.107/0.107/0.107/0.000 ms 1 pps 136
+[  1] 35.9004-36.0004 sec  15.7 KBytes  1.28 Mbits/sec   0.974 ms 0/11 (0%) 2.278/0.974/3.214/0.741 ms 3406 pps 70
+[  1] 36.0004-36.1004 sec  1.42 KBytes   117 Kbits/sec   0.936 ms 0/1 (0%) 3.573/3.573/3.573/0.000 ms 2778 pps 4
+[  1] 36.1004-36.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.2004-36.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.3004-36.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.4004-36.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.5004-36.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.6004-36.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.7004-36.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.8004-36.9004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 36.9004-37.0004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.0004-37.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.1004-37.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.2004-37.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.3004-37.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.4004-37.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.5004-37.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.6004-37.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.7004-37.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 37.8004-37.9004 sec  1.42 KBytes   117 Kbits/sec   1.094 ms 0/1 (0%) 0.109/0.109/0.109/0.000 ms 1 pps 134
+[  1] 37.9004-38.0004 sec  17.1 KBytes  1.40 Mbits/sec   0.599 ms 0/12 (0%) 1.212/0.418/2.195/0.598 ms 5548 pps 144
+[  1] 38.0004-38.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.1004-38.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.2004-38.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.3004-38.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.4004-38.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.5004-38.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.6004-38.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.7004-38.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.8004-38.9004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 38.9004-39.0004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.0004-39.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.1004-39.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.2004-39.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.3004-39.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.4004-39.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.5004-39.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.6004-39.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.7004-39.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 39.8004-39.9004 sec  1.42 KBytes   117 Kbits/sec   0.680 ms 0/1 (0%) 0.308/0.308/0.308/0.000 ms 1 pps 47
+[  1] 39.9004-40.0004 sec  15.7 KBytes  1.28 Mbits/sec   0.459 ms 0/11 (0%) 1.922/0.717/3.087/0.799 ms 3821 pps 83
+[  1] 40.0004-40.1004 sec  1.42 KBytes   117 Kbits/sec   0.498 ms 0/1 (0%) 4.166/4.166/4.166/0.000 ms 925 pps 3
+[  1] 40.1004-40.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.2004-40.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.3004-40.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.4004-40.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.5004-40.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.6004-40.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.7004-40.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.8004-40.9004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 40.9004-41.0004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.0004-41.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.1004-41.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.2004-41.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.3004-41.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.4004-41.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.5004-41.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.6004-41.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.7004-41.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 41.8004-41.9004 sec  1.42 KBytes   117 Kbits/sec   0.721 ms 0/1 (0%) 0.104/0.104/0.104/0.000 ms 1 pps 140
+[  1] 41.9004-42.0004 sec  17.1 KBytes  1.40 Mbits/sec   0.435 ms 0/12 (0%) 1.402/0.638/2.410/0.569 ms 5006 pps 125
+[  1] 42.0004-42.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.1004-42.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.2004-42.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.3004-42.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.4004-42.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.5004-42.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.6004-42.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.7004-42.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.8004-42.9004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 42.9004-43.0004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.0004-43.1004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.1004-43.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.2004-43.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.3004-43.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.4004-43.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.5004-43.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.6004-43.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.7004-43.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 43.8004-43.9004 sec  1.42 KBytes   117 Kbits/sec   0.553 ms 0/1 (0%) 0.090/0.090/0.090/0.000 ms 1 pps 162
+[  1] 43.9004-44.0004 sec  9.97 KBytes   816 Kbits/sec   0.512 ms 0/7 (0%) 2.634/0.610/3.445/0.966 ms 2016 pps 39
+[  1] 44.0004-44.1004 sec  7.12 KBytes   583 Kbits/sec   0.436 ms 0/5 (0%) 4.130/3.677/4.631/0.362 ms 4167 pps 18
+[  1] 44.1004-44.2004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.2004-44.3004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.3004-44.4004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.4004-44.5004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.5004-44.6004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.6004-44.7004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.7004-44.8004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.8004-44.9004 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 44.9004-45.0005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.0005-45.1005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.1005-45.2005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.2005-45.3005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.3005-45.4005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.4005-45.5005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.5005-45.6005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.6005-45.7005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.7005-45.8005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 45.8005-45.9005 sec  1.42 KBytes   117 Kbits/sec   0.691 ms 0/1 (0%) 0.124/0.124/0.124/0.000 ms 1 pps 118
+[  1] 45.9005-46.0005 sec  15.7 KBytes  1.28 Mbits/sec   0.422 ms 0/11 (0%) 1.056/0.220/1.874/0.482 ms 6128 pps 152
+[  1] 46.0005-46.1005 sec  1.42 KBytes   117 Kbits/sec   0.515 ms 0/1 (0%) 3.792/3.792/3.792/0.000 ms 521 pps 4
+[  1] 46.1005-46.2005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.2005-46.3005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.3005-46.4005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.4005-46.5005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.5005-46.6005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.6005-46.7005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.7005-46.8005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.8005-46.9005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 46.9005-47.0005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.0005-47.1005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.1005-47.2005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.2005-47.3005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.3005-47.4005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.4005-47.5005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.5005-47.6005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.6005-47.7005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.7005-47.8005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 47.8005-47.9005 sec  1.42 KBytes   117 Kbits/sec   0.713 ms 0/1 (0%) 0.105/0.105/0.105/0.000 ms 1 pps 139
+[  1] 47.9005-48.0005 sec  17.1 KBytes  1.40 Mbits/sec   0.480 ms 0/12 (0%) 1.325/0.518/3.111/0.726 ms 3852 pps 132
+[  1] 48.0005-48.1005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.1005-48.2005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.2005-48.3005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.3005-48.4005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.4005-48.5005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.5005-48.6005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.6005-48.7005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.7005-48.8005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.8005-48.9005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 48.9005-49.0005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.0005-49.1005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.1005-49.2005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.2005-49.3005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.3005-49.4005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.4005-49.5005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.5005-49.6005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.6005-49.7005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.7005-49.8005 sec  0.000 Bytes  0.000 bits/sec   0.000 ms 0/0 (0%) -/-/-/- ms 0 pps
+[  1] 49.8005-49.9005 sec  1.42 KBytes   117 Kbits/sec   0.637 ms 0/1 (0%) 0.119/0.119/0.119/0.000 ms 1 pps 123
+[  1] 49.9005-49.9971 sec  1.42 KBytes   121 Kbits/sec   0.610 ms 0/1 (0%) 0.317/0.317/0.317/0.000 ms 4292 pps 48
+[  1] 0.0000-49.9971 sec   466 KBytes  76.3 Kbits/sec   0.610 ms 1/328 (0.3%) 3.937/0.058/10.740/2.019 ms 7 pps 2

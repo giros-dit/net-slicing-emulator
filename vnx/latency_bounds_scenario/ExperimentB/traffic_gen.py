@@ -36,7 +36,7 @@ dst_mac = subprocess.check_output(
 # Tráfico en ráfagas (isochronous)
 bursts = [
     {"src": "10.0.0.3", "dst": "10.2.0.3", "interval": 1.0, "count": 30},   # h2 -> server2
-    {"src": "10.0.0.13", "dst": "10.2.0.13", "interval": 1.0, "count": 12}, # h12 -> server12
+    {"src": "10.0.0.13", "dst": "10.2.0.13", "interval": 1.0, "count": 13}, # h12 -> server12
     {"src": "10.0.0.7", "dst": "10.2.0.7", "interval": 1.0, "count": 60},  # h6 -> server6
     {"src": "10.0.0.9", "dst": "10.2.0.9", "interval": 1.0, "count": 50},   # h8 -> server8
 ]
@@ -101,6 +101,7 @@ def generate_burst(flow, t0, start):
     for i in range(burst_count):
         src_ip = flow["src"]
         src_mac = host_macs[src_ip]
+        
         pkt_time = t0 + start + current_time +  i * 0.000004
 
         flow_seq[flow_id] += 1
