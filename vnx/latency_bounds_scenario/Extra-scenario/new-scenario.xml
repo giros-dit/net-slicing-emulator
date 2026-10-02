@@ -19,8 +19,9 @@
   <net name="Net1" mode="virtual_bridge"/>
   <net name="Net2" mode="virtual_bridge"/>
   <net name="Net3" mode="virtual_bridge"/>
-  <net name="NetPE2" mode="virtual_bridge"/>
   <net name="Net4" mode="virtual_bridge"/>
+  <net name="NetPE2" mode="virtual_bridge"/>
+  <net name="Net5" mode="virtual_bridge"/>
   <net name="virbr0" mode="virtual_bridge" managed="no"/>
 
   <vm name="PE1" type="lxc" arch="x86_64">
@@ -46,8 +47,8 @@
 
   <vm name="PE2" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net3">
-      <ipv4>10.1.0.66/30</ipv4>
+    <if id="1" net="Net4">
+      <ipv4>10.1.0.98/30</ipv4>
     </if>
     <if id="2" net="NetPE2">
       <ipv4>10.2.0.1/24</ipv4>
@@ -59,7 +60,7 @@
     <filetree seq="on_boot" root="/root/" perms="777">conf/PE2_conf.sh</filetree>
     <filetree seq="on_boot" root="/etc/hosts" perms="755">conf/hosts</filetree>
     <filetree seq="on_boot" root="/usr/bin/" perms="755">/usr/bin/vnx_config_nat</filetree>
-    <route type="ipv4" gw="10.1.0.65">10.0.0.0/24</route>
+    <route type="ipv4" gw="10.1.0.97">10.0.0.0/24</route>
     <forwarding type="ip" />
     <exec seq="on_boot" type="verbatim">
        echo "nameserver 8.8.8.8" >> /etc/resolv.conf
@@ -112,6 +113,28 @@
     </exec>
     <exec seq="config_routers" type="verbatim">
             ./root/P2_conf.sh
+    </exec>
+  </vm>
+
+
+  <vm name="P3" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+        <ipv4>10.1.0.66/30</ipv4>
+    </if>
+    <if id="2" net="Net4">
+        <ipv4>10.1.0.97/30</ipv4>
+    </if>
+    <route type="ipv4" gw="10.1.0.98">default</route>
+    <route type="ipv4" gw="10.1.0.65">10.0.0.0/24</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <filetree seq="on_boot" root="/root/" perms="777">conf/P3_conf.sh</filetree>
+    <exec seq="on_boot" type="verbatim" ostype="system">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+            echo 1 > /proc/sys/net/ipv4/ip_forward
+    </exec>
+    <exec seq="config_routers" type="verbatim">
+            ./root/P3_conf.sh
     </exec>
   </vm>
 
@@ -260,10 +283,58 @@
     </exec>
   </vm>
 
+  <vm name="h13" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.14/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="h14" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.15/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="h15" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.16/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="h16" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net0">
+      <ipv4>10.0.0.17/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.0.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts" perms="755">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
 
   <vm name="server1" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.2/24</ipv4>
     </if>
     <filetree seq="on_boot" root="/root/" perms="755">conf/</filetree>
@@ -276,7 +347,7 @@
 
   <vm name="server2" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.3/24</ipv4>
     </if>
     <filetree seq="on_boot" root="/root/" perms="755">conf/</filetree>
@@ -290,7 +361,7 @@
 
   <vm name="server3" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.4/24</ipv4>
     </if>
     <filetree seq="on_boot" root="/root/" perms="755">conf/</filetree>
@@ -304,7 +375,7 @@
 
   <vm name="server4" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.5/24</ipv4>
     </if>
     <filetree seq="on_boot" root="/root/" perms="755">conf/</filetree>
@@ -318,7 +389,7 @@
 
   <vm name="server5" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.6/24</ipv4>
     </if>
     <filetree seq="on_boot" root="/root/" perms="755">conf/</filetree>
@@ -332,7 +403,7 @@
 
   <vm name="server6" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.7/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -345,7 +416,7 @@
 
   <vm name="server7" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.8/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -357,7 +428,7 @@
 
   <vm name="server8" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.9/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -369,7 +440,7 @@
 
   <vm name="server9" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.10/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -381,7 +452,7 @@
 
   <vm name="server10" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.11/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -393,7 +464,7 @@
 
   <vm name="server11" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.12/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
@@ -405,8 +476,56 @@
 
   <vm name="server12" type="lxc" arch="x86_64">
     <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
-    <if id="1" net="Net4">
+    <if id="1" net="Net5">
       <ipv4>10.2.0.13/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="server13" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net5">
+      <ipv4>10.2.0.14/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="server14" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net5">
+      <ipv4>10.2.0.15/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="server15" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net5">
+      <ipv4>10.2.0.16/24</ipv4>
+    </if>
+    <route type="ipv4" gw="10.2.0.1">default</route>
+    <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
+    <exec seq="on_boot" type="verbatim">
+            echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+    </exec>
+  </vm>
+
+  <vm name="server16" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net5">
+      <ipv4>10.2.0.17/24</ipv4>
     </if>
     <route type="ipv4" gw="10.2.0.1">default</route>
     <filetree seq="on_boot" root="/etc/hosts">conf/hosts</filetree>
@@ -420,16 +539,16 @@
       ip link del veth-pe2
       ip link add veth-pe2 type veth peer name veth-upf
       brctl addif NetPE2 veth-pe2
-      brctl addif Net4 veth-upf
+      brctl addif Net5 veth-upf
       ip link set veth-pe2 up
       ip link set veth-upf up
 
-      tc qdisc add dev P1-e1 root handle 1: netem rate 1gbit
-      tc qdisc add dev P2-e1 root handle 1: netem rate 100mbit
-      tc qdisc add dev PE2-e1 root handle 1: netem rate 1gbit
-      tc qdisc add dev veth-pe2 root handle 1: netem rate 100mbit
+      tc qdisc add dev P1-e1 root handle 1: netem rate 500mbit
+      tc qdisc add dev P2-e1 root handle 1: netem rate 300mbit
+      tc qdisc add dev P3-e1 root handle 1: netem rate 150mbit
+      tc qdisc add dev PE2-e1 root handle 1: netem rate 300mbit
+      tc qdisc add dev veth-pe2 root handle 1: netem rate 150mbit
     </exec>
   </host>
-
 
 </vnx>
