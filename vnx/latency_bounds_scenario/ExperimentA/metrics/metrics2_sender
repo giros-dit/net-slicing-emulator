@@ -3,7 +3,7 @@ Client connecting to server2, UDP port 5001
 Sending 1458 byte datagrams, IPG target: 1207.73 us (kalman adjust)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 10.0.0.4 port 54258 connected with 10.2.0.3 port 5001
+[  1] local 10.0.0.4 port 44901 connected with 10.2.0.3 port 5001
 [ ID] Interval       Transfer     Bandwidth
 [  1] 0.0000-0.1000 sec   120 KBytes  9.80 Mbits/sec
 [  1] 0.1000-0.2000 sec   118 KBytes  9.68 Mbits/sec
@@ -29,8 +29,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 2.1000-2.2000 sec   118 KBytes  9.68 Mbits/sec
 [  1] 2.2000-2.3000 sec   118 KBytes  9.68 Mbits/sec
 [  1] 2.3000-2.4000 sec   118 KBytes  9.68 Mbits/sec
-[  1] 2.4000-2.5000 sec   118 KBytes  9.68 Mbits/sec
-[  1] 2.5000-2.6000 sec   117 KBytes  9.56 Mbits/sec
+[  1] 2.4000-2.5000 sec   117 KBytes  9.56 Mbits/sec
+[  1] 2.5000-2.6000 sec   118 KBytes  9.68 Mbits/sec
 [  1] 2.6000-2.7000 sec   118 KBytes  9.68 Mbits/sec
 [  1] 2.7000-2.8000 sec   118 KBytes  9.68 Mbits/sec
 [  1] 2.8000-2.9000 sec   118 KBytes  9.68 Mbits/sec
@@ -59,8 +59,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 5.1001-5.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 5.2001-5.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 5.3001-5.4001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 5.4001-5.5001 sec   117 KBytes  9.56 Mbits/sec
-[  1] 5.5001-5.6001 sec   118 KBytes  9.68 Mbits/sec
+[  1] 5.4001-5.5001 sec   118 KBytes  9.68 Mbits/sec
+[  1] 5.5001-5.6001 sec   117 KBytes  9.56 Mbits/sec
 [  1] 5.6001-5.7001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 5.7001-5.8001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 5.8001-5.9001 sec   118 KBytes  9.68 Mbits/sec
@@ -69,8 +69,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 6.1001-6.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 6.2001-6.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 6.3001-6.4001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 6.4001-6.5001 sec   117 KBytes  9.56 Mbits/sec
-[  1] 6.5001-6.6001 sec   118 KBytes  9.68 Mbits/sec
+[  1] 6.4001-6.5001 sec   118 KBytes  9.68 Mbits/sec
+[  1] 6.5001-6.6001 sec   117 KBytes  9.56 Mbits/sec
 [  1] 6.6001-6.7001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 6.7001-6.8001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 6.8001-6.9001 sec   118 KBytes  9.68 Mbits/sec
@@ -79,13 +79,13 @@ UDP buffer size:  208 KByte (default)
 [  1] 7.1001-7.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 7.2001-7.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 7.3001-7.4001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 7.4001-7.5001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 7.5001-7.6001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 7.4001-7.5001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 7.5001-7.6001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 7.6001-7.7001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 7.7001-7.8001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 7.8001-7.9001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 7.9001-8.0001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 8.0001-8.1001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 7.9001-8.0001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 8.0001-8.1001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 8.1001-8.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 8.2001-8.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 8.3001-8.4001 sec   118 KBytes  9.68 Mbits/sec
@@ -99,8 +99,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 9.1001-9.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 9.2001-9.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 9.3001-9.4001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 9.4001-9.5001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 9.5001-9.6001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 9.4001-9.5001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 9.5001-9.6001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 9.6001-9.7001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 9.7001-9.8001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 9.8001-9.9001 sec   118 KBytes  9.68 Mbits/sec
@@ -109,8 +109,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 10.1001-10.2001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 10.2001-10.3001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 10.3001-10.4001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 10.4001-10.5001 sec   118 KBytes  9.68 Mbits/sec
-[  1] 10.5001-10.6001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 10.4001-10.5001 sec   117 KBytes  9.56 Mbits/sec
+[  1] 10.5001-10.6001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 10.6001-10.7001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 10.7001-10.8001 sec   118 KBytes  9.68 Mbits/sec
 [  1] 10.8001-10.9001 sec   118 KBytes  9.68 Mbits/sec
@@ -194,8 +194,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 18.6002-18.7002 sec   118 KBytes  9.68 Mbits/sec
 [  1] 18.7002-18.8002 sec   118 KBytes  9.68 Mbits/sec
 [  1] 18.8002-18.9002 sec   118 KBytes  9.68 Mbits/sec
-[  1] 18.9002-19.0002 sec   118 KBytes  9.68 Mbits/sec
-[  1] 19.0002-19.1002 sec   117 KBytes  9.56 Mbits/sec
+[  1] 18.9002-19.0002 sec   117 KBytes  9.56 Mbits/sec
+[  1] 19.0002-19.1002 sec   118 KBytes  9.68 Mbits/sec
 [  1] 19.1002-19.2002 sec   118 KBytes  9.68 Mbits/sec
 [  1] 19.2002-19.3002 sec   118 KBytes  9.68 Mbits/sec
 [  1] 19.3002-19.4002 sec   118 KBytes  9.68 Mbits/sec
@@ -310,8 +310,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 30.2003-30.3003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 30.3003-30.4003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 30.4003-30.5003 sec   118 KBytes  9.68 Mbits/sec
-[  1] 30.5003-30.6003 sec   117 KBytes  9.56 Mbits/sec
-[  1] 30.6003-30.7003 sec   118 KBytes  9.68 Mbits/sec
+[  1] 30.5003-30.6003 sec   118 KBytes  9.68 Mbits/sec
+[  1] 30.6003-30.7003 sec   117 KBytes  9.56 Mbits/sec
 [  1] 30.7003-30.8003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 30.8003-30.9003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 30.9003-31.0003 sec   118 KBytes  9.68 Mbits/sec
@@ -320,8 +320,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 31.2003-31.3003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 31.3003-31.4003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 31.4003-31.5003 sec   118 KBytes  9.68 Mbits/sec
-[  1] 31.5003-31.6003 sec   117 KBytes  9.56 Mbits/sec
-[  1] 31.6003-31.7003 sec   118 KBytes  9.68 Mbits/sec
+[  1] 31.5003-31.6003 sec   118 KBytes  9.68 Mbits/sec
+[  1] 31.6003-31.7003 sec   117 KBytes  9.56 Mbits/sec
 [  1] 31.7003-31.8003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 31.8003-31.9003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 31.9003-32.0003 sec   118 KBytes  9.68 Mbits/sec
@@ -335,8 +335,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 32.7003-32.8003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 32.8003-32.9003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 32.9003-33.0003 sec   118 KBytes  9.68 Mbits/sec
-[  1] 33.0003-33.1003 sec   118 KBytes  9.68 Mbits/sec
-[  1] 33.1003-33.2003 sec   117 KBytes  9.56 Mbits/sec
+[  1] 33.0003-33.1003 sec   117 KBytes  9.56 Mbits/sec
+[  1] 33.1003-33.2003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 33.2003-33.3003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 33.3003-33.4003 sec   118 KBytes  9.68 Mbits/sec
 [  1] 33.4003-33.5003 sec   118 KBytes  9.68 Mbits/sec
@@ -370,8 +370,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 36.2004-36.3004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 36.3004-36.4004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 36.4004-36.5004 sec   118 KBytes  9.68 Mbits/sec
-[  1] 36.5004-36.6004 sec   118 KBytes  9.68 Mbits/sec
-[  1] 36.6004-36.7004 sec   117 KBytes  9.56 Mbits/sec
+[  1] 36.5004-36.6004 sec   117 KBytes  9.56 Mbits/sec
+[  1] 36.6004-36.7004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 36.7004-36.8004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 36.8004-36.9004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 36.9004-37.0004 sec   118 KBytes  9.68 Mbits/sec
@@ -380,8 +380,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 37.2004-37.3004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 37.3004-37.4004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 37.4004-37.5004 sec   118 KBytes  9.68 Mbits/sec
-[  1] 37.5004-37.6004 sec   118 KBytes  9.68 Mbits/sec
-[  1] 37.6004-37.7004 sec   117 KBytes  9.56 Mbits/sec
+[  1] 37.5004-37.6004 sec   117 KBytes  9.56 Mbits/sec
+[  1] 37.6004-37.7004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 37.7004-37.8004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 37.8004-37.9004 sec   118 KBytes  9.68 Mbits/sec
 [  1] 37.9004-38.0004 sec   118 KBytes  9.68 Mbits/sec
@@ -551,18 +551,18 @@ UDP buffer size:  208 KByte (default)
 [  1] 54.3005-54.4005 sec   118 KBytes  9.68 Mbits/sec
 [  1] 54.4005-54.5005 sec   118 KBytes  9.68 Mbits/sec
 [  1] 54.5005-54.6005 sec   118 KBytes  9.68 Mbits/sec
-[  1] 54.6005-54.7005 sec   117 KBytes  9.56 Mbits/sec
-[  1] 54.7005-54.8005 sec   118 KBytes  9.68 Mbits/sec
+[  1] 54.6005-54.7005 sec   118 KBytes  9.68 Mbits/sec
+[  1] 54.7005-54.8005 sec   117 KBytes  9.56 Mbits/sec
 [  1] 54.8005-54.9005 sec   118 KBytes  9.68 Mbits/sec
 [  1] 54.9005-55.0005 sec   118 KBytes  9.68 Mbits/sec
 [  1] 55.0005-55.1006 sec   118 KBytes  9.68 Mbits/sec
-[  1] 55.1006-55.2006 sec   117 KBytes  9.56 Mbits/sec
-[  1] 55.2006-55.3006 sec   118 KBytes  9.68 Mbits/sec
+[  1] 55.1006-55.2006 sec   118 KBytes  9.68 Mbits/sec
+[  1] 55.2006-55.3006 sec   117 KBytes  9.56 Mbits/sec
 [  1] 55.3006-55.4006 sec   118 KBytes  9.68 Mbits/sec
 [  1] 55.4006-55.5006 sec   118 KBytes  9.68 Mbits/sec
 [  1] 55.5006-55.6006 sec   118 KBytes  9.68 Mbits/sec
-[  1] 55.6006-55.7006 sec   117 KBytes  9.56 Mbits/sec
-[  1] 55.7006-55.8006 sec   118 KBytes  9.68 Mbits/sec
+[  1] 55.6006-55.7006 sec   118 KBytes  9.68 Mbits/sec
+[  1] 55.7006-55.8006 sec   117 KBytes  9.56 Mbits/sec
 [  1] 55.8006-55.9006 sec   118 KBytes  9.68 Mbits/sec
 [  1] 55.9006-56.0006 sec   118 KBytes  9.68 Mbits/sec
 [  1] 56.0006-56.1006 sec   118 KBytes  9.68 Mbits/sec
@@ -609,4 +609,4 @@ UDP buffer size:  208 KByte (default)
 [  1] Sent 49684 datagrams
 [  1] Server Report:
 [ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
-[  1] 0.0000-60.0012 sec  69.1 MBytes  9.66 Mbits/sec   0.023 ms 1/49683 (0.002%) 4.608/0.005/24.976/0.247 ms 828 pps 262
+[  1] 0.0000-60.0009 sec  69.1 MBytes  9.66 Mbits/sec   0.041 ms 0/49683 (0%) 5.503/0.272/25.480/0.029 ms 828 pps 219

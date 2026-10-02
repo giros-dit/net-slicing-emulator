@@ -159,8 +159,8 @@ plt.ylim(0,10)
 
 plt.tight_layout()
 
-tikzplotlib.save("pkt_losses_expb.tex",
-                 axis_width="\\textwidth",
-                 axis_height="0.7\\textwidth")
+# tikzplotlib.save("pkt_losses_expb.tex",
+#                  axis_width="\\textwidth",
+#                  axis_height="0.7\\textwidth")
 
 plt.show()

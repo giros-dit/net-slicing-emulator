@@ -1,12 +1,12 @@
 ------------------------------------------------------------
-Client connecting to server10, UDP port 5001 with pid 192 (1 flows)
-Isochronous: 1.00 frames/sec mean= 257 Kbit/s, stddev=0.000 bit/s, Period/IPG=1000.00/0.001 ms
+Client connecting to server10, UDP port 5001 with pid 486 (1 flows)
+Isochronous: 1.00 frames/sec mean= 245 Kbit/s, stddev=0.000 bit/s, Period/IPG=1000.00/0.001 ms
 TOS set to 0x0 (Nagle on)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 10.0.0.9%eth1 port 37471 connected with 10.2.0.11 port 5001 (isoch) (sock=3) on 2026-09-25 11:26:54 (UTC)
+[  1] local 10.0.0.9%eth1 port 57507 connected with 10.2.0.11 port 5001 (isoch) (sock=3) on 2026-10-02 10:38:31 (UTC)
 [ ID] Interval            Transfer     Bandwidth      Write/Err  PPS  isoch:tx/miss/slip
-[  1] 0.0000-0.1000 sec  32.7 KBytes  2.68 Mbits/sec  0/0   109524 pps    2/0/0
+[  1] 0.0000-0.1000 sec  31.3 KBytes  2.57 Mbits/sec  0/0   105263 pps    2/0/0
 [  1] 0.1000-0.2000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 0.2000-0.3000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 0.3000-0.4000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -16,7 +16,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 0.7000-0.8000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 0.8000-0.9000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 0.9000-1.0000 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 1.0000-1.1000 sec  29.9 KBytes  2.45 Mbits/sec  0/0   119318 pps    1/0/0
+[  1] 1.0000-1.1000 sec  28.5 KBytes  2.33 Mbits/sec  0/0   130719 pps    1/0/0
 [  1] 1.1000-1.2000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 1.2000-1.3000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 1.3000-1.4000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -26,7 +26,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 1.7000-1.8000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 1.8000-1.9000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 1.9000-2.0000 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 2.0000-2.1000 sec  29.9 KBytes  2.45 Mbits/sec  0/0   173554 pps    1/0/0
+[  1] 2.0000-2.1000 sec  28.5 KBytes  2.33 Mbits/sec  0/0   108696 pps    1/0/0
 [  1] 2.1000-2.2000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 2.2000-2.3000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 2.3000-2.4000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -36,7 +36,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 2.7000-2.8000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 2.8000-2.9000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 2.9000-3.0000 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 3.0000-3.1000 sec  29.9 KBytes  2.45 Mbits/sec  0/0   108247 pps    1/0/0
+[  1] 3.0000-3.1000 sec  28.5 KBytes  2.33 Mbits/sec  0/0   129032 pps    1/0/0
 [  1] 3.1000-3.2000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 3.2000-3.3000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 3.3000-3.4000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -46,7 +46,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 3.7000-3.8000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 3.8000-3.9000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 3.9000-4.0000 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 4.0000-4.1000 sec  29.9 KBytes  2.45 Mbits/sec  0/0   115385 pps    1/0/0
+[  1] 4.0000-4.1000 sec  28.5 KBytes  2.33 Mbits/sec  0/0   188679 pps    1/0/0
 [  1] 4.1000-4.2000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 4.2000-4.3000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 4.3000-4.4000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -56,7 +56,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 4.7000-4.8000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 4.8000-4.9000 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 4.9000-5.0000 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 5.0000-5.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   114130 pps    1/0/0
+[  1] 5.0000-5.1001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   176991 pps    1/0/0
 [  1] 5.1001-5.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 5.2001-5.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 5.3001-5.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -66,7 +66,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 5.7001-5.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 5.8001-5.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 5.9001-6.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 6.0001-6.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   111111 pps    1/0/0
+[  1] 6.0001-6.1001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   162602 pps    1/0/0
 [  1] 6.1001-6.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 6.2001-6.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 6.3001-6.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -76,7 +76,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 6.7001-6.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 6.8001-6.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 6.9001-7.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 7.0001-7.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   140000 pps    1/0/0
+[  1] 7.0001-7.1001 sec  28.5 KBytes  2.33 Mbits/sec  0/0    10864 pps    1/0/0
 [  1] 7.1001-7.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 7.2001-7.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 7.3001-7.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -84,9 +84,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 7.5001-7.6001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 7.6001-7.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 7.7001-7.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 7.8001-7.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 7.9001-8.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 8.0001-8.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   113514 pps    1/0/0
+[  1] 7.8001-7.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 7.9001-8.0001 sec  24.2 KBytes  1.98 Mbits/sec  0/0   320755 pps    0/0/0
+[  1] 8.0001-8.1001 sec  4.27 KBytes   350 Kbits/sec  0/0   375000 pps    1/0/0
 [  1] 8.1001-8.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 8.2001-8.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 8.3001-8.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -94,9 +94,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 8.5001-8.6001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 8.6001-8.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 8.7001-8.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 8.8001-8.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 8.9001-9.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 9.0001-9.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   148936 pps    1/0/0
+[  1] 8.8001-8.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 8.9001-9.0001 sec  1.42 KBytes   117 Kbits/sec  0/0    50000 pps    0/0/0
+[  1] 9.0001-9.1001 sec  27.1 KBytes  2.22 Mbits/sec  0/0   311475 pps    1/0/0
 [  1] 9.1001-9.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 9.2001-9.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 9.3001-9.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -105,8 +105,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 9.6001-9.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 9.7001-9.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 9.8001-9.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 9.9001-10.0001 sec  1.42 KBytes   117 Kbits/sec  0/0    40000 pps    0/0/0
-[  1] 10.0001-10.1001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   235294 pps    1/0/0
+[  1] 9.9001-10.0001 sec  1.42 KBytes   117 Kbits/sec  0/0    14493 pps    0/0/0
+[  1] 10.0001-10.1001 sec  27.1 KBytes  2.22 Mbits/sec  0/0   358491 pps    1/0/0
 [  1] 10.1001-10.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 10.2001-10.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 10.3001-10.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -114,9 +114,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 10.5001-10.6001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 10.6001-10.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 10.7001-10.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 10.8001-10.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 10.9001-11.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 11.0001-11.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   154412 pps    1/0/0
+[  1] 10.8001-10.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 10.9001-11.0001 sec  25.6 KBytes  2.10 Mbits/sec  0/0   246575 pps    0/0/0
+[  1] 11.0001-11.1001 sec  2.85 KBytes   233 Kbits/sec  0/0   400000 pps    1/0/0
 [  1] 11.1001-11.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 11.2001-11.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 11.3001-11.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -124,9 +124,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 11.5001-11.6001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 11.6001-11.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 11.7001-11.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 11.8001-11.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 11.9001-12.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 12.0001-12.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   150000 pps    1/0/0
+[  1] 11.8001-11.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 11.9001-12.0001 sec  19.9 KBytes  1.63 Mbits/sec  0/0   245614 pps    0/0/0
+[  1] 12.0001-12.1001 sec  8.54 KBytes   700 Kbits/sec  0/0   352941 pps    1/0/0
 [  1] 12.1001-12.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 12.2001-12.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 12.3001-12.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -134,9 +134,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 12.5001-12.6001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 12.6001-12.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 12.7001-12.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 12.8001-12.9001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 12.9001-13.0001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 13.0001-13.1001 sec  29.9 KBytes  2.45 Mbits/sec  0/0   154412 pps    1/0/0
+[  1] 12.8001-12.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 12.9001-13.0001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   294118 pps    1/0/0
+[  1] 13.0001-13.1001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 13.1001-13.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 13.2001-13.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 13.3001-13.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -145,8 +145,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 13.6001-13.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 13.7001-13.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 13.8001-13.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 13.9001-14.0001 sec  1.42 KBytes   117 Kbits/sec  0/0    12048 pps    0/0/0
-[  1] 14.0001-14.1001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   137931 pps    1/0/0
+[  1] 13.9001-14.0001 sec  27.1 KBytes  2.22 Mbits/sec  0/0   253333 pps    0/0/0
+[  1] 14.0001-14.1001 sec  1.42 KBytes   117 Kbits/sec  0/0   200000 pps    1/0/0
 [  1] 14.1001-14.2001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 14.2001-14.3001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 14.3001-14.4001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -155,8 +155,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 14.6001-14.7001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 14.7001-14.8001 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 14.8001-14.9001 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 14.9001-15.0001 sec  1.42 KBytes   117 Kbits/sec  0/0    14286 pps    0/0/0
-[  1] 15.0001-15.1002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   202020 pps    1/0/0
+[  1] 14.9001-15.0001 sec  28.5 KBytes  2.33 Mbits/sec  0/0   363636 pps    1/0/0
+[  1] 15.0001-15.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 15.1002-15.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 15.2002-15.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 15.3002-15.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -165,8 +165,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 15.6002-15.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 15.7002-15.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 15.8002-15.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 15.9002-16.0002 sec  8.54 KBytes   700 Kbits/sec  0/0    83333 pps    0/0/0
-[  1] 16.0002-16.1002 sec  21.4 KBytes  1.75 Mbits/sec  0/0   300000 pps    1/0/0
+[  1] 15.9002-16.0002 sec  11.4 KBytes   933 Kbits/sec  0/0    86022 pps    0/0/0
+[  1] 16.0002-16.1002 sec  17.1 KBytes  1.40 Mbits/sec  0/0   307692 pps    1/0/0
 [  1] 16.1002-16.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 16.2002-16.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 16.3002-16.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -175,8 +175,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 16.6002-16.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 16.7002-16.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 16.8002-16.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 16.9002-17.0002 sec  18.5 KBytes  1.52 Mbits/sec  0/0   152941 pps    0/0/0
-[  1] 17.0002-17.1002 sec  11.4 KBytes   933 Kbits/sec  0/0   177778 pps    1/0/0
+[  1] 16.9002-17.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   259740 pps    1/0/0
+[  1] 17.0002-17.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 17.1002-17.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 17.2002-17.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 17.3002-17.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -184,9 +184,9 @@ UDP buffer size:  208 KByte (default)
 [  1] 17.5002-17.6002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 17.6002-17.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 17.7002-17.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 17.8002-17.9002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
-[  1] 17.9002-18.0002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 18.0002-18.1002 sec  29.9 KBytes  2.45 Mbits/sec  0/0   175000 pps    1/0/0
+[  1] 17.8002-17.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
+[  1] 17.9002-18.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   206186 pps    1/0/0
+[  1] 18.0002-18.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 18.1002-18.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 18.2002-18.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 18.3002-18.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -195,8 +195,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 18.6002-18.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 18.7002-18.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 18.8002-18.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 18.9002-19.0002 sec  18.5 KBytes  1.52 Mbits/sec  0/0   122642 pps    0/0/0
-[  1] 19.0002-19.1002 sec  11.4 KBytes   933 Kbits/sec  0/0   119403 pps    1/0/0
+[  1] 18.9002-19.0002 sec  4.27 KBytes   350 Kbits/sec  0/0    83333 pps    0/0/0
+[  1] 19.0002-19.1002 sec  24.2 KBytes  1.98 Mbits/sec  0/0   293103 pps    1/0/0
 [  1] 19.1002-19.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 19.2002-19.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 19.3002-19.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -205,8 +205,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 19.6002-19.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 19.7002-19.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 19.8002-19.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 19.9002-20.0002 sec  24.2 KBytes  1.98 Mbits/sec  0/0   149123 pps    0/0/0
-[  1] 20.0002-20.1002 sec  5.70 KBytes   467 Kbits/sec  0/0   222222 pps    1/0/0
+[  1] 19.9002-20.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   327869 pps    1/0/0
+[  1] 20.0002-20.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 20.1002-20.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 20.2002-20.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 20.3002-20.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -215,8 +215,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 20.6002-20.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 20.7002-20.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 20.8002-20.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 20.9002-21.0002 sec  1.42 KBytes   117 Kbits/sec  0/0    11236 pps    0/0/0
-[  1] 21.0002-21.1002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   192308 pps    1/0/0
+[  1] 20.9002-21.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   273973 pps    1/0/0
+[  1] 21.0002-21.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 21.1002-21.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 21.2002-21.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 21.3002-21.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -225,8 +225,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 21.6002-21.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 21.7002-21.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 21.8002-21.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 21.9002-22.0002 sec  15.7 KBytes  1.28 Mbits/sec  0/0    83969 pps    0/0/0
-[  1] 22.0002-22.1002 sec  14.2 KBytes  1.17 Mbits/sec  0/0   217391 pps    1/0/0
+[  1] 21.9002-22.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   253165 pps    1/0/0
+[  1] 22.0002-22.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 22.1002-22.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 22.2002-22.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 22.3002-22.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -235,8 +235,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 22.6002-22.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 22.7002-22.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 22.8002-22.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 22.9002-23.0002 sec  1.42 KBytes   117 Kbits/sec  0/0    11236 pps    0/0/0
-[  1] 23.0002-23.1002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   232558 pps    1/0/0
+[  1] 22.9002-23.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   208333 pps    1/0/0
+[  1] 23.0002-23.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 23.1002-23.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 23.2002-23.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 23.3002-23.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -245,8 +245,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 23.6002-23.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 23.7002-23.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 23.8002-23.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 23.9002-24.0002 sec  1.42 KBytes   117 Kbits/sec  0/0    28571 pps    0/0/0
-[  1] 24.0002-24.1002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   181818 pps    1/0/0
+[  1] 23.9002-24.0002 sec  28.5 KBytes  2.33 Mbits/sec  0/0   200000 pps    1/0/0
+[  1] 24.0002-24.1002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 24.1002-24.2002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 24.2002-24.3002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 24.3002-24.4002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -255,8 +255,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 24.6002-24.7002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 24.7002-24.8002 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 24.8002-24.9002 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 24.9002-25.0003 sec  1.42 KBytes   117 Kbits/sec  0/0    11905 pps    0/0/0
-[  1] 25.0003-25.1003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   188679 pps    1/0/0
+[  1] 24.9002-25.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   127389 pps    1/0/0
+[  1] 25.0003-25.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 25.1003-25.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 25.2003-25.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 25.3003-25.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -265,8 +265,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 25.6003-25.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 25.7003-25.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 25.8003-25.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 25.9003-26.0003 sec  12.8 KBytes  1.05 Mbits/sec  0/0   116883 pps    0/0/0
-[  1] 26.0003-26.1003 sec  17.1 KBytes  1.40 Mbits/sec  0/0   190476 pps    1/0/0
+[  1] 25.9003-26.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   136986 pps    1/0/0
+[  1] 26.0003-26.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 26.1003-26.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 26.2003-26.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 26.3003-26.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -275,7 +275,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 26.6003-26.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 26.7003-26.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 26.8003-26.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 26.9003-27.0003 sec  29.9 KBytes  2.45 Mbits/sec  0/0   155556 pps    1/0/0
+[  1] 26.9003-27.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   135135 pps    1/0/0
 [  1] 27.0003-27.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 27.1003-27.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 27.2003-27.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -285,8 +285,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 27.6003-27.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 27.7003-27.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 27.8003-27.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 27.9003-28.0003 sec  9.97 KBytes   816 Kbits/sec  0/0   125000 pps    0/0/0
-[  1] 28.0003-28.1003 sec  19.9 KBytes  1.63 Mbits/sec  0/0   274510 pps    1/0/0
+[  1] 27.9003-28.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   133333 pps    1/0/0
+[  1] 28.0003-28.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 28.1003-28.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 28.2003-28.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 28.3003-28.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -295,8 +295,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 28.6003-28.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 28.7003-28.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 28.8003-28.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 28.9003-29.0003 sec  17.1 KBytes  1.40 Mbits/sec  0/0   123711 pps    0/0/0
-[  1] 29.0003-29.1003 sec  12.8 KBytes  1.05 Mbits/sec  0/0   145161 pps    1/0/0
+[  1] 28.9003-29.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   123457 pps    1/0/0
+[  1] 29.0003-29.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 29.1003-29.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 29.2003-29.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 29.3003-29.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -305,7 +305,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 29.6003-29.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 29.7003-29.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 29.8003-29.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 29.9003-30.0003 sec  29.9 KBytes  2.45 Mbits/sec  0/0   159091 pps    1/0/0
+[  1] 29.9003-30.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   109890 pps    1/0/0
 [  1] 30.0003-30.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 30.1003-30.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 30.2003-30.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -315,7 +315,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 30.6003-30.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 30.7003-30.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 30.8003-30.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 30.9003-31.0003 sec  29.9 KBytes  2.45 Mbits/sec  0/0   143836 pps    1/0/0
+[  1] 30.9003-31.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   135135 pps    1/0/0
 [  1] 31.0003-31.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 31.1003-31.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 31.2003-31.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -325,7 +325,7 @@ UDP buffer size:  208 KByte (default)
 [  1] 31.6003-31.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 31.7003-31.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 31.8003-31.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 31.9003-32.0003 sec  29.9 KBytes  2.45 Mbits/sec  0/0   128834 pps    1/0/0
+[  1] 31.9003-32.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   105820 pps    1/0/0
 [  1] 32.0003-32.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 32.1003-32.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 32.2003-32.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -335,8 +335,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 32.6003-32.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 32.7003-32.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 32.8003-32.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 32.9003-33.0003 sec  8.54 KBytes   700 Kbits/sec  0/0    50420 pps    0/0/0
-[  1] 33.0003-33.1003 sec  21.4 KBytes  1.75 Mbits/sec  0/0   189873 pps    1/0/0
+[  1] 32.9003-33.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   128205 pps    1/0/0
+[  1] 33.0003-33.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 33.1003-33.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 33.2003-33.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 33.3003-33.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -345,8 +345,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 33.6003-33.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 33.7003-33.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 33.8003-33.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 33.9003-34.0003 sec  22.8 KBytes  1.87 Mbits/sec  0/0   130081 pps    0/0/0
-[  1] 34.0003-34.1003 sec  7.12 KBytes   583 Kbits/sec  0/0   178571 pps    1/0/0
+[  1] 33.9003-34.0003 sec  28.5 KBytes  2.33 Mbits/sec  0/0   135135 pps    1/0/0
+[  1] 34.0003-34.1003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 34.1003-34.2003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 34.2003-34.3003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 34.3003-34.4003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
@@ -355,8 +355,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 34.6003-34.7003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 34.7003-34.8003 sec  0.000 Bytes  0.000 bits/sec  0/0        0 pps    0/0/0
 [  1] 34.8003-34.9003 sec  1.42 KBytes   117 Kbits/sec  0/0        1 pps    0/0/0
-[  1] 0.0000-35.0001 sec  1.07 MBytes   258 Kbits/sec  0/0       22 pps   36/0/0
-[  1] Sent 774 datagrams
+[  1] 0.0000-35.0001 sec  1.03 MBytes   246 Kbits/sec  0/0       21 pps   36/0/0
+[  1] Sent 739 datagrams
 [  1] Server Report:
 [ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
-[  1] 0.0000-35.0003 sec  1.06 MBytes   254 Kbits/sec   0.290 ms 10/773 (1.3%) 1.241/0.038/2.554/0.726 ms 22 pps 26
+[  1] 0.0000-35.0001 sec  1.03 MBytes   246 Kbits/sec   0.282 ms 0/738 (0%) 1.545/0.322/2.871/0.705 ms 21 pps 20

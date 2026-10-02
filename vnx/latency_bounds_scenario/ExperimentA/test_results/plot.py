@@ -39,7 +39,7 @@ with open('files/latency_max_metrics6', 'r') as file:
             s3c2_data2.append(float(line.strip()))
         except ValueError:
             s3c2_data2.append(0)
-with open('files/latency_max_metrics5', 'r') as file:
+with open('files/lat_max_metrics5', 'r') as file:
     for line in file:
         try:
             s2c2_data2.append(float(line.strip()))
@@ -133,7 +133,7 @@ ax2.text(1.01, 15, 'TNB flows', transform=ax2.get_yaxis_transform(), color='#008
 ax2.text(1.01, 30, 'TNC flows', transform=ax2.get_yaxis_transform(), color='#B03060', va='center', ha='left', fontsize=9, fontweight='bold', clip_on=False)
 ax2.grid(True)
 #ax2.legend()
-tikzplotlib.save("latency_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("latency_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 # Figura 3: Bandwidth Behaviour
 fig3, ax3 = plt.subplots(figsize=(7,7))
@@ -149,7 +149,7 @@ ax3.set_ylabel('BW (Mbps)', fontsize=14)
 ax3.set_xlim(0,60)
 ax3.grid(True)
 #ax3.legend()
-tikzplotlib.save("bw_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("bw_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 # Figura 6: Bandwidth Sent Behaviour
 fig6, ax6 = plt.subplots(figsize=(7,7))
@@ -165,7 +165,7 @@ ax6.set_ylabel('BW (Mbps)', fontsize=14)
 ax6.set_xlim(0,60)
 ax6.grid(True)
 #ax6.legend()
-tikzplotlib.save("bw_gen_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("bw_gen_expa.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 #fig_legend1 = plt.figure(figsize=(10, 1))
 #handles, labels = ax3.get_legend_handles_labels()

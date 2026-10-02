@@ -19,6 +19,7 @@
   <net name="Net1" mode="virtual_bridge"/>
   <net name="Net2" mode="virtual_bridge"/>
   <net name="Net3" mode="virtual_bridge"/>
+  <net name="NetPE2" mode="virtual_bridge"/>
   <net name="Net4" mode="virtual_bridge"/>
   <net name="virbr0" mode="virtual_bridge" managed="no"/>
 
@@ -48,7 +49,7 @@
     <if id="1" net="Net3">
       <ipv4>10.1.0.66/30</ipv4>
     </if>
-    <if id="2" net="Net4">
+    <if id="2" net="NetPE2">
       <ipv4>10.2.0.1/24</ipv4>
     </if>
     <if id="9" net="virbr0">
@@ -413,6 +414,21 @@
             echo "nameserver 8.8.8.8" >> /etc/resolv.conf
     </exec>
   </vm>
+
+  <host>
+    <exec seq="on_boot" type="verbatim">
+      ip link add veth-pe2 type veth peer name veth-upf
+      brctl addif NetPE2 veth-pe2
+      brctl addif Net4 veth-upf
+      ip link set veth-pe2 up
+      ip link set veth-upf up
+
+      tc qdisc add dev P1-e1 root handle 1: netem rate 1gbit
+      tc qdisc add dev P2-e1 root handle 1: netem rate 100mbit
+      tc qdisc add dev PE2-e1 root handle 1: netem rate 1gbit
+      tc qdisc add dev veth-pe2 root handle 1: netem rate 100mbit
+    </exec>
+  </host>
 
 
 </vnx>

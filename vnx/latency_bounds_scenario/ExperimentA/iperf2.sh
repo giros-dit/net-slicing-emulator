@@ -34,7 +34,7 @@ sudo lxc-attach -n server11 -- iperf -s -u -e -i 0.1 > metrics5_burst &
 sudo lxc-attach -n h1 -- iperf -c server1 -u -i 0.1 -b 2490pps -l 1458 -t 60 > metrics1_sender &
 sudo lxc-attach -n h3 -- iperf -c server2 -u -i 0.1 -b 828pps -l 1458 -t 60 > metrics2_sender &
 sudo lxc-attach -n h5 -- iperf -c server3 -u -i 0.1 -b 2488pps -l 1458 -t 45 > metrics3_sender &
-sudo lxc-attach -n h7 -- iperf -c server4 -u -i 0.1 -b 809pps -l 1458 -t 60 > metrics4_sender &
+sudo lxc-attach -n h7 -- iperf -c server4 -u -i 0.1 -b 812pps -l 1458 -t 60 > metrics4_sender &
 sudo lxc-attach -n h11 -- iperf -c server6 -u -i 0.1 -b 1659pps -l 1458 -t 60 > metrics5_sender &
 
 sleep 10.062
@@ -43,7 +43,7 @@ sudo parallel ::: \
     "sudo lxc-attach -n h2 -- iperf -c server7 -i 0.1 -u --isochronous=0.5:19p --ipg 0.001 -l 1458 -t 50 > metrics1_sender_burst &" \
     "sudo lxc-attach -n h6 -- iperf -c server9 -i 0.1 -u --isochronous=0.2:55p --ipg 0.001 -l 1458 -t 35 > metrics3_sender_burst &" \
     "sudo lxc-attach -n h4 -- iperf -c server8 -i 0.1 -u --isochronous=0.2:18p --ipg 0.001 -l 1458 -t 50 > metrics2_sender_burst &" \
-    "sudo lxc-attach -n h8 -- iperf -c server10 -i 0.1 -u --isochronous=1:22p --ipg 0.001 -l 1458 -t 35 > metrics4_sender_burst &" \
+    "sudo lxc-attach -n h8 -- iperf -c server10 -i 0.1 -u --isochronous=1:21p --ipg 0.001 -l 1458 -t 35 > metrics4_sender_burst &" \
     "sudo lxc-attach -n h12 -- iperf -c server11 -i 0.1 -u --isochronous=0.5:13p --ipg 0.001 -l 1458 -t 50 > metrics5_sender_burst &"
 
 sleep 35

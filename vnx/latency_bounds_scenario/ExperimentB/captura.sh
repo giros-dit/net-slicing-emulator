@@ -16,7 +16,7 @@ PID2=$!
 wireshark -i P1-e2 -k -f "udp && !icmp" -w capturas/P1-e2.pcap &
 PID3=$!
 
-wireshark -i PE2-e2 -k -f "udp && !icmp" -w capturas/PE2-e2.pcap &
+wireshark -i veth-pe2 -k -f "udp && !icmp" -w capturas/PE2-e2.pcap &
 PID4=$!
 
 echo "Capturando (UDP) y mostrando (udp and !icmp)..."

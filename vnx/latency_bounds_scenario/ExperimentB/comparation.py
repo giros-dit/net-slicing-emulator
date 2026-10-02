@@ -157,7 +157,7 @@ plt.xlim(0,1000)
 #plt.legend()
 plt.tight_layout()
 
-tikzplotlib.save("bw_expb.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
+#tikzplotlib.save("bw_expb.tex", axis_width="\\textwidth", axis_height="0.7\\textwidth")
 
 
 # Plot the delays

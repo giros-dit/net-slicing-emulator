@@ -102,7 +102,7 @@ def generate_burst(flow, t0, start):
         src_ip = flow["src"]
         src_mac = host_macs[src_ip]
         
-        pkt_time = t0 + start + current_time +  i * 0.000004
+        pkt_time = t0 + start + current_time +  i * 0.000001
 
         flow_seq[flow_id] += 1
         seq = flow_seq[flow_id]

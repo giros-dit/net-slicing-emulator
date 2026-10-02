@@ -3,7 +3,7 @@ Client connecting to server5, UDP port 5001
 Sending 1458 byte datagrams, IPG target: 400.00 us (kalman adjust)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 10.0.0.10 port 43597 connected with 10.2.0.6 port 5001
+[  1] local 10.0.0.10 port 60402 connected with 10.2.0.6 port 5001
 [ ID] Interval       Transfer     Bandwidth
 [  1] 0.0000-0.1000 sec   357 KBytes  29.3 Mbits/sec
 [  1] 0.1000-0.2000 sec   356 KBytes  29.2 Mbits/sec
@@ -21,8 +21,8 @@ UDP buffer size:  208 KByte (default)
 [  1] 1.3000-1.4000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 1.4000-1.5000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 1.5000-1.6000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 1.6000-1.7000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 1.7000-1.8000 sec   356 KBytes  29.2 Mbits/sec
+[  1] 1.6000-1.7000 sec   357 KBytes  29.3 Mbits/sec
+[  1] 1.7000-1.8000 sec   355 KBytes  29.0 Mbits/sec
 [  1] 1.8000-1.9000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 1.9000-2.0000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 2.0000-2.1000 sec   356 KBytes  29.2 Mbits/sec
@@ -47,35 +47,35 @@ UDP buffer size:  208 KByte (default)
 [  1] 3.9000-4.0000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 4.0000-4.1000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 4.1000-4.2000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 4.2000-4.3000 sec   356 KBytes  29.2 Mbits/sec
+[  1] 4.2000-4.3000 sec   357 KBytes  29.3 Mbits/sec
 [  1] 4.3000-4.4000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 4.4000-4.5000 sec   356 KBytes  29.2 Mbits/sec
+[  1] 4.4000-4.5000 sec   355 KBytes  29.0 Mbits/sec
 [  1] 4.5000-4.6000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 4.6000-4.7000 sec   356 KBytes  29.2 Mbits/sec
 [  1] 4.7000-4.8000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 4.8000-4.9000 sec   356 KBytes  29.2 Mbits/sec
-[  1] 4.9000-5.0000 sec   356 KBytes  29.2 Mbits/sec
+[  1] 4.8000-4.9000 sec   357 KBytes  29.3 Mbits/sec
+[  1] 4.9000-5.0000 sec   355 KBytes  29.0 Mbits/sec
 [  1] 5.0000-5.1001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 5.1001-5.2001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 5.2001-5.3001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 5.3001-5.4001 sec   357 KBytes  29.3 Mbits/sec
-[  1] 5.4001-5.5001 sec   355 KBytes  29.0 Mbits/sec
+[  1] 5.3001-5.4001 sec   356 KBytes  29.2 Mbits/sec
+[  1] 5.4001-5.5001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 5.5001-5.6001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 5.6001-5.7001 sec   357 KBytes  29.3 Mbits/sec
+[  1] 5.6001-5.7001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 5.7001-5.8001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 5.8001-5.9001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 5.9001-6.0001 sec   355 KBytes  29.0 Mbits/sec
-[  1] 6.0001-6.1001 sec   357 KBytes  29.3 Mbits/sec
+[  1] 5.8001-5.9001 sec   357 KBytes  29.3 Mbits/sec
+[  1] 5.9001-6.0001 sec   356 KBytes  29.2 Mbits/sec
+[  1] 6.0001-6.1001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 6.1001-6.2001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 6.2001-6.3001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 6.3001-6.4001 sec   355 KBytes  29.0 Mbits/sec
-[  1] 6.4001-6.5001 sec   357 KBytes  29.3 Mbits/sec
-[  1] 6.5001-6.6001 sec   356 KBytes  29.2 Mbits/sec
+[  1] 6.3001-6.4001 sec   356 KBytes  29.2 Mbits/sec
+[  1] 6.4001-6.5001 sec   355 KBytes  29.0 Mbits/sec
+[  1] 6.5001-6.6001 sec   357 KBytes  29.3 Mbits/sec
 [  1] 6.6001-6.7001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 6.7001-6.8001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 6.8001-6.9001 sec   356 KBytes  29.2 Mbits/sec
-[  1] 6.9001-7.0001 sec   355 KBytes  29.0 Mbits/sec
-[  1] 7.0001-7.1001 sec   357 KBytes  29.3 Mbits/sec
+[  1] 6.9001-7.0001 sec   356 KBytes  29.2 Mbits/sec
+[  1] 7.0001-7.1001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 7.1001-7.2001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 7.2001-7.3001 sec   356 KBytes  29.2 Mbits/sec
 [  1] 7.3001-7.4001 sec   356 KBytes  29.2 Mbits/sec
@@ -159,4 +159,4 @@ UDP buffer size:  208 KByte (default)
 [  1] Sent 37504 datagrams
 [  1] Server Report:
 [ ID] Interval            Transfer     Bandwidth        Jitter   Lost/Total  Latency avg/min/max/stdev PPS NetPwr
-[  1] 0.0000-15.0002 sec  52.1 MBytes  29.2 Mbits/sec   0.027 ms 0/37503 (0%) 2.726/0.007/19.482/0.297 ms 2500 pps 1337
+[  1] 0.0000-15.0002 sec  52.1 MBytes  29.2 Mbits/sec   0.006 ms 0/37503 (0%) 3.188/0.275/19.987/0.318 ms 2500 pps 1144

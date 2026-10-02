@@ -1,3 +1,5 @@
+tc qdisc del dev eth2 root
+
 echo "Creating Hierarchical DRR"
 #Set Link Speed
 tc qdisc add dev eth2 root handle 1: htb
